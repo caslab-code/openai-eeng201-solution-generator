@@ -1,0 +1,6 @@
+{
+  "Question A" : "List the names of one-input and two-input logic gates, excluding XOR and XNOR.",
+  "Question B" : "What is the difference between OR and XOR gate?",
+  "Question C" : "Can we have more than two-input gates?",
+  "Question D" : "What is the purpose of \"bubble pushing\"?"
+} 
