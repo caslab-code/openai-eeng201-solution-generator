@@ -29,6 +29,9 @@ openai.api_key = apikey
 with open(args.questions, "r") as questions_file:
     data = json.load(questions_file)
 
+# Generate answers
+answers = dict()
+
 for question in data:
     print("")
     print(question)
@@ -46,6 +49,12 @@ for question in data:
 
     for choice in text['choices']:
         print(choice['text'])
+
+    answers[ question ] = choice['text']
+
+# Write answers to JSON file
+with open('data.json', 'w') as outfile:
+  json.dump(answers, outfile, indent=4)
 
 # Done
 print("Finished.")
