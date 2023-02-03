@@ -4,6 +4,7 @@ import json
 import openai
 import argparse
 import requests
+import datetime
 
 # Setup argument parser
 parser = argparse.ArgumentParser(description='Generate solutions to a quiz, input is JSON file with quiz questions.',
@@ -13,6 +14,9 @@ parser.add_argument('-s', '--settings', dest='settings', type=str, required=True
 parser.add_argument('-q', '--questions', dest='questions', type=str, required=True,
           help='Path to JSON settings file with questions.')
 args = parser.parse_args()
+
+# Script start time
+start_time = datetime.datetime.now()
 
 # Read API key from JSON file
 with open(args.settings, "r") as settings_file:
@@ -51,6 +55,11 @@ for question in data:
         print(choice['text'])
 
     answers[ question ] = choice['text']
+
+# Script end time
+end_time = datetime.datetime.now()
+execution_time = end_time - start_time
+answers[ 'Execution Time'] = str(execution_time)
 
 # Write answers to JSON file
 with open('data.json', 'w') as outfile:
