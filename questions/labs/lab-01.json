@@ -1,5 +1,5 @@
 {
-  "Question A" : "Complete the following truth table for the full adder circuit.",
-  "Question B" : "Derive Boolean equations for CO and S (using whatever method you like). It is possible to complete the equations using only NAND and XOR logical gates (Hint: use some of what you already have from Sum for Co, and that Co is always asserted for AB.)",
-  "Question C" : " Draw the schematic of the full adder circuit according to the equations you have derived. Note that you sometimes use the output of one logical gate for BOTH expressions, to minimize the number of gates used. Verify your Boolean expressions and circuit with the TF."
+  "Question A" : "Complete the truth table for the full adder circuit.",
+  "Question B" : "Derive Boolean equations for Co and Sum (using whatever method you like). It is possible to complete the equations using only NAND and XOR logical gates (Hint: use some of what you already have from Sum for Co, and that Co is always asserted for AB.)",
+  "Question C" : "Draw the schematic of the full adder circuit according to the equations you have derived. Note that you sometimes use the output of one logical gate for BOTH expressions, to minimize the number of gates used."
 } 
