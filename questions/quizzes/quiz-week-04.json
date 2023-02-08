@@ -1,0 +1,6 @@
+{
+  "Question A" : "What is the difference between sum of products and a canonical sum of products expressions?",
+  "Question B" : "What is the difference between sum of products and product of sums expression?",
+  "Question C" : "Does minimal sum of products expression always result in smallest number of logic gates? Why or why not?",
+  "Question D" : "What is an universal gate? Is NAND, NOR, or XOR (or more than one of them) an universal gate?"
+}
