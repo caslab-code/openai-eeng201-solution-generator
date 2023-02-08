@@ -1,3 +1,17 @@
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import os
 import sys
 import json
@@ -7,7 +21,7 @@ import requests
 import datetime
 
 # Setup argument parser
-parser = argparse.ArgumentParser(description='Generate solutions to a quiz, input is JSON file with quiz questions.',
+parser = argparse.ArgumentParser(description='Generate solutions to questions input as JSON file.',
                 formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('-s', '--settings', dest='settings', type=str, required=True,
           help='Path to JSON settings file with OpenAI API key.')
