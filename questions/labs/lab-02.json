@@ -1,6 +1,26 @@
 {
-  "Question A" : "Fill out the truth table, which describes the operation of a full adder. We use the inputs A, B, CI and the outputs are called S and CO.",
-  "Question B" : "Derive the Boolean equations for both outputs of a full adder. Apply logic minimization techniques to come up with a simplified full adder circuit.",
-  "Question C" : "Draw the schematic of the full adder circuit according to the equations you have derived.",
-  "Question D" : "Generate full adder Verilog code for outputs co (carry out) and s (sum)"
+  "Question A" : {
+    "text" : "Fill out the truth table, which describes the operation of a full adder. We use the inputs A, B, CI and the outputs are called S and CO.",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question B" : {
+    "text" : "Derive the Boolean equations for both outputs of a full adder. Apply logic minimization techniques to come up with a simplified full adder circuit.",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question C" : {
+    "text" : "Draw the schematic of the full adder circuit according to the equations you have derived.",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question D" : {
+    "text" : "Generate full adder Verilog code for outputs co (carry out) and s (sum)",
+    "figure" : "",
+    "reference" : ""
+  }
+
 } 

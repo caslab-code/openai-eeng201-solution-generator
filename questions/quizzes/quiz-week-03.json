@@ -1,6 +1,26 @@
 {
-  "Question A" : "What is the difference between nMOS and pMOS transistors?",
-  "Question B" : "How many nMOS and pMOST transistors are used to build a NOT gate? How are they connected?",
-  "Question C" : "What is difference between dynamic power and static power?",
-  "Question D" : "What is the difference between a product term and a minterm?"
+  "Question A" : {
+    "text" : "What is the difference between nMOS and pMOS transistors?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question B" : {
+    "text" : "How many nMOS and pMOST transistors are used to build a NOT gate? How are they connected?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question C" : {
+    "text" : "What is difference between dynamic power and static power?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question D" : {
+    "text" : "What is the difference between a product term and a minterm?",
+    "figure" : "",
+    "reference" : ""
+  }
+
 }
