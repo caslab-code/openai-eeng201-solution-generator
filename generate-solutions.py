@@ -27,6 +27,8 @@ parser.add_argument('-s', '--settings', dest='settings', type=str, required=True
           help='Path to JSON settings file with OpenAI API key.')
 parser.add_argument('-q', '--questions', dest='questions', type=str, required=True,
           help='Path to JSON settings file with questions.')
+parser.add_argument('-o', '--output', dest='output', type=str, required=True,
+          help='Path to output JSON file for saving generated answers.')
 args = parser.parse_args()
 
 # Script start time
@@ -53,9 +55,9 @@ answers = dict()
 for question in data:
     print("")
     print(question)
-    print(data[question])
+    print(data[question]['text'])
 
-    prompt = data[question]
+    prompt = data[question]['text']
 
     text = openai.Completion.create(
         model="text-davinci-003",
@@ -76,7 +78,7 @@ execution_time = end_time - start_time
 answers[ 'Execution Time'] = str(execution_time)
 
 # Write answers to JSON file
-with open('data.json', 'w') as outfile:
+with open(args.output, 'w') as outfile:
   json.dump(answers, outfile, indent=4)
 
 # Done

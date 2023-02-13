@@ -22,8 +22,8 @@ parser = argparse.ArgumentParser(description='Generate a PDF document with solut
                 formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('-i', '--input', dest='input', type=str, required=True,
           help='Name of the input JSON file with the solutions.')
-parser.add_argument('-o', '--output', dest='output', type=str, required=False,
-          help='Name of the output PDF file. If not specified, use input file name, with PDF file extension for output.')
+parser.add_argument('-o', '--output', dest='output', type=str, required=True,
+          help='Name of the output PDF file.')
 args = parser.parse_args()
 
 # Read in JSON solutions file
@@ -45,11 +45,22 @@ with open(tex_file_name, "w") as tex_file:
    for question in solutions:
        tex_file.write('\\section*{' + question + '}\n')
        tex_file.write('\n')
+       tex_file.write('\\begin{verbatim}\n')
        tex_file.write(str(solutions[question]) + '\n')
+       tex_file.write('\\end{verbatim}\n')
        tex_file.write('\n')
 
    tex_file.write('\end{document}\n')
 
 # Generate PDF form tex document
-subprocess.run(["pdflatex", tex_file_name])
+directory = os.path.dirname(tex_file_name)
+subprocess.run(["pdflatex", "-output-directory="+directory, tex_file_name])
+
+# Do some cleanup
+aux_file = os.path.splitext( args.output )[0] + '.aux'
+subprocess.run(["rm", aux_file])
+log_file = os.path.splitext( args.output )[0] + '.log'
+subprocess.run(["rm", log_file])
+tex_file = os.path.splitext( args.output )[0] + '.tex'
+subprocess.run(["rm", tex_file])
 
