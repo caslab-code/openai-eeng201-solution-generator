@@ -21,5 +21,5 @@ solutions stored in JSON file into a PDF file. Internally the script uses LaTeX 
 generate simple article document where it inserts the questions and the corresponding
 OpenAI generated answers found in the provided JSON file.
 
-python3 utils/generate-latex-pdf-from-json-solution-files.py -i solutions/homeworks/assignment-01-solutions.json -o solutions-openai-generated/homeworks/assignment-01-solutions.pdf
+python3 utils/generate-latex-pdf-from-json-solution-files.py -i solutions-openai-generated/homeworks/assignment-01-solutions.json -o solutions-openai-generated/homeworks/assignment-01-solutions.pdf
 
