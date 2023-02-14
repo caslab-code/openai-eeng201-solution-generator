@@ -52,6 +52,12 @@ with open(args.questions, "r") as questions_file:
 # Generate answers
 answers = dict()
 
+# Set OpenAI parameters
+model_param       = "text-davinci-003"
+max_tokens_param  = 512
+temperature_param = 1
+n_param           = 1
+
 for question in data:
     print("")
     print(question)
@@ -60,22 +66,27 @@ for question in data:
     prompt = data[question]['text']
 
     text = openai.Completion.create(
-        model="text-davinci-003",
+        model=model_param,
         prompt=prompt,
-        max_tokens=256,
-        temperature=1,
-        n=1
+        max_tokens=max_tokens_param,
+        temperature=temperature_param,
+        n=n_param
     )
 
     for choice in text['choices']:
         print(choice['text'])
 
-    answers[ question ] = choice['text']
+    answers[ question ] = dict()
+    answers[ question ]['question'] = prompt
+    answers[ question ]['answer'] = choice['text'].lstrip()
 
-# Script end time
+# Save script end time
 end_time = datetime.datetime.now()
 execution_time = end_time - start_time
-answers[ 'Execution Time'] = str(execution_time)
+answers['Execution Time'] = str(execution_time)
+
+# Save parameters
+answers['OpenAI Parameters'] = 'Model: ' + model_param + ', Max. Tokens: ' + str(max_tokens_param) + ', Temperature: ' + str(temperature_param) + ', N: ' + str(n_param) + ''
 
 # Write answers to JSON file
 with open(args.output, 'w') as outfile:

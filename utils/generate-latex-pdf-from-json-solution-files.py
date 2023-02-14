@@ -36,19 +36,45 @@ tex_file_name = os.path.splitext( args.output )[0] + '.tex'
 with open(tex_file_name, "w") as tex_file:
    tex_file.write('\\documentclass{article}\n')
    tex_file.write('\\usepackage[letterpaper, margin=1in]{geometry}\n')
+   tex_file.write('''
+\\usepackage{listings}
+\\lstset{
+basicstyle=\small\\ttfamily,
+columns=flexible,
+breaklines=true
+}\n''')
    tex_file.write('\\begin{document}\n')
-   tex_file.write('\\title{\\textbf{Solutions Based on ' + args.input + '}}\n')
+   tex_file.write('\\title{\\textbf{Solutions PDF Generated from:\\\\ ' + args.input + '}}\n')
    tex_file.write('\\date{}\n')
    tex_file.write('\\maketitle')
    tex_file.write('\n')
 
    for question in solutions:
-       tex_file.write('\\section*{' + question + '}\n')
-       tex_file.write('\n')
-       tex_file.write('\\begin{verbatim}\n')
-       tex_file.write(str(solutions[question]) + '\n')
-       tex_file.write('\\end{verbatim}\n')
-       tex_file.write('\n')
+
+       if isinstance(solutions[question], dict):
+
+           question_text = solutions[question]['question']
+           print(question_text)
+           answer_text = solutions[question]['answer'].lstrip()
+           print(answer_text)
+
+           tex_file.write('\\section*{' + question + '}\n')
+           tex_file.write('\n')
+           tex_file.write(question_text + '\n')
+           tex_file.write('\n')
+           tex_file.write('\\begin{lstlisting}\n')
+           tex_file.write(answer_text + '\n')
+           tex_file.write('\\end{lstlisting}\n')
+           tex_file.write('\n')
+
+       else:
+
+           tex_file.write('\\section*{' + question + '}\n')
+           tex_file.write('\n')
+           tex_file.write('\\begin{verbatim}\n')
+           tex_file.write(str(solutions[question]) + '\n')
+           tex_file.write('\\end{verbatim}\n')
+           tex_file.write('\n')
 
    tex_file.write('\end{document}\n')
 
@@ -64,3 +90,5 @@ subprocess.run(["rm", log_file])
 tex_file = os.path.splitext( args.output )[0] + '.tex'
 subprocess.run(["rm", tex_file])
 
+# Done
+print("Finished.")
