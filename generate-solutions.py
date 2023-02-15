@@ -54,7 +54,7 @@ answers = dict()
 
 # Set OpenAI parameters
 model_param       = "text-davinci-003"
-max_tokens_param  = 512
+max_tokens_param  = 1024
 temperature_param = 1
 n_param           = 1
 
