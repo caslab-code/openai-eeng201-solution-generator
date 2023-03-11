@@ -1,0 +1,14 @@
+{
+  "Question A" : {
+    "text" : "Design a Finite State Machine to mimic the performance of a 1965 Ford Thunderbird’s taillights. There are three inputs – left, right, and hazard. If left is the input, the left set of LEDs should progressively light up and then go dark, repeating until the signal is no longer applied. Similar logic will apply to the right LEDs. If the hazard input switch is on, all of the lights should blink on and off until the input is changed. Write out a Next State Logic and Output Logic circuit. The three inputs will be the left, right, and hazard switches. The outputs will be the 6 or 8 LEDs that you choose to use for displaying the patterns.",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question B" : {
+    "text" : "Write Verilog code to realize the Finite State Machine for the taillights operation. There are three inputs – left, right, and hazard. If left is the input, the left set of LEDs should progressively light up and then go dark, repeating until the signal is no longer applied. Similar logic will apply to the right LEDs. If the hazard input switch is on, all of the lights should blink on and off until the input is changed.",
+    "figure" : "",
+    "reference" : ""
+  }
+
+} 

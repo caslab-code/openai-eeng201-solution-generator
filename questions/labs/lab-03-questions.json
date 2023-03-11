@@ -1,0 +1,14 @@
+{
+  "Question A" : {
+    "text" : "Fill in the truth table that converts a binary number to a 7-segment encoding.  Note that a segment should glow when the corresponding output is logic-0.",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question B" : {
+    "text" : "Write Verilog code for 7-segment decoder.",
+    "figure" : "",
+    "reference" : ""
+  }
+
+} 
