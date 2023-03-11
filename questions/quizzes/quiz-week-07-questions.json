@@ -1,0 +1,32 @@
+{
+  "Question A" : {
+    "text" : "What is the difference between Mealy and Moore state machines?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question B" : {
+    "text" : "What is the next state logic?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question C" : {
+    "text" : "What is the output logic?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question D" : {
+    "text" : "What is difference between binary and one-hot state encoding in state machines?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question E" : {
+    "text" : "How would use of K-Maps help in design of state machines?",
+    "figure" : "",
+    "reference" : ""
+  }
+
+}

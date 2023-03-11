@@ -1,0 +1,32 @@
+{
+  "Question A" : {
+    "text" : "How many NOR gates are used in SR-latch?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question B" : {
+    "text" : "What is difference between SR-latch and D-latch?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question C" : {
+    "text" : "What is difference between a latch and flip-flop? Hint: consider how do they operate with respect to the clock input.",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question D" : {
+    "text" : "What is difference between combinatorial logic, sequential logic, and synchronous sequential logic?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question E" : {
+    "text" : "What does state register of state machine do?",
+    "figure" : "",
+    "reference" : ""
+  }
+
+}

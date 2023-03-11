@@ -1,0 +1,32 @@
+{
+  "Question A" : {
+    "text" : "For a 4-variable K-Map, why are the rows and columns arranged in the order: 00, 01, 11, 10?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question B" : {
+    "text" : "How do you assign values to don’t care X in K-Maps when doing simplification?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question C" : {
+    "text" : "Can you circle a rectangle of 2x3 cells in a K-Map, why or why not?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question D" : {
+    "text" : "What does 2x4 decoder do?",
+    "figure" : "",
+    "reference" : ""
+  },
+
+  "Question E" : {
+    "text" : "What is seven-segment display?",
+    "figure" : "",
+    "reference" : ""
+  }
+
+}
