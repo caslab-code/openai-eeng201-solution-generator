@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "What is the difference between sum of products and a canonical sum of products expressions?",
+        "answer": "Sum of products (SOP) is an algebraic expression composed of the sum of multiple products of variables and their complements. Canonical Sum of Products (CSOP) is a specific type of SOP expression designed to be simplified in fewer steps, often removing redundancies and common factors between terms. CSOP expressions are also designed to make it easier to convert them into a circuit diagram."
+    },
+    "Question B": {
+        "question": "What is the difference between sum of products and product of sums expression?",
+        "answer": "The sum of products expression is connecting two or more variables with the OR operator (plus sign) and then each result is added together. A product of sums expression is connecting two or more variables with the AND operator (multiplication sign) and then each result is multiplied together."
+    },
+    "Question C": {
+        "question": "Does minimal sum of products expression always result in smallest number of logic gates? Why or why not?",
+        "answer": "No, minimal sum of products expression does not always result in the smallest number of logic gates. This is because the number of minimal sum of products terms in an expression is not necessarily equal to the number of required logic gates. The number of logic gates may vary depending on how the expression is implemented."
+    },
+    "Question D": {
+        "question": "What is an universal gate? Is NAND, NOR, or XOR (or more than one of them) an universal gate?",
+        "answer": "An universal gate is a logic gate that can be used to implement any boolean function without need for additional gates. Yes, both NAND and NOR are universal gates, as well as XOR. In fact, any two-input logic gate can be used to create an universal gate, such as AND, XNOR, and OR."
+    },
+    "Execution Time": "0:00:12.011127",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

@@ -1,0 +1,56 @@
+{
+    "Question A": {
+        "question": "Simplify f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y into sum-of-products form. Follow example from lecture 3 slides, however, at each step of the simplification process write down the Boolean algebra theorem used in this step. Note lecture slides sometimes used multiple theorems in each step in the slides, your solutions should use only one theorem at each step and may have more steps than shown in the slides. List of Boolean algebra theorems can be found in the supplementary materials on Canvas site.",
+        "answer": "Step 1: (x'(y+z') + z')y \n\nTheorem used: Associative\n\nStep 2: (x'y + x'z' +z'y) \n\nTheorem used: Distributive \n\nStep 3: x'y + (x'z' +z'y) \n\nTheorem used: Commutative \n\nStep 4: x'y + x'z' +z'y\n\nTheorem used: None (already in sum of products form)"
+    },
+    "Question B": {
+        "question": "Simplify the following Boolean equation into sum-of-products form. Again, justify each simplification step with Boolean algebra theorem used: f(a,b,c,d,e) = (a+b+c\u2019)(a+b+d)(a+b+e)(a+d\u2019+e)(a\u2019+c).",
+        "answer": "Sum-of-products form: \nf(a,b,c,d,e) = a\u2019cd\u2019e\u2019 + abc\u2019d\u2019e\u2019 + abcd\u2019e\u2019 + ab\u2019de\u2019 + ab\u2019de\n\nStep 1:\nf(a,b,c,d,e) = (a+b+c')(a+b+d)(a+b+e)(a+d'+e)(a'+c)\n               = (a+b+c')(a+d'+e)+a(a+b+d)(a+b+e)(a'+c)\n               = (a+d'+e)(a+b+c')+a(a+b+d)(a+b+e)(a'+c)              ------------( Commutative property)\n               \nStep 2:\n               = (a+d'+e)(a+b+c')+a(a+b+d)(a'+e)(a'+c)               ------------( Distributive property)\n\nStep 3:\n               = (a+d'+e)(a+b+c')+a(a'+e)(a'+c)                    ------------(Complementary property)\n\nStep 4:\n               = (a+d'+e)(a+b+c')+a'c'd'e'                       ------------(Distributive property)\n\nStep 5:\n               = a'cd'e' + abc'd'e' + abcd'e' + ab'd'e + ab'de       ------------(Distributive property)"
+    },
+    "Question C": {
+        "question": "Simplify the following Boolean equation into sum-of-products form. Again, justify each simplification step with Boolean algebra theorem used: f(a,b,c,d,e) = (a+b+c\u2019)(a+b+d)(a+b+e)(a+d\u2019+e)(a\u2019+c).",
+        "answer": "f(a,b,c,d,e) = (a+b) (a+d'+e) (a'+c) (Distributive Law)\n= (a+b+c')(a+b+d)[a+b(d+e)](a'+c) (Associative Law)\n= (a+b+c')(a+b+d)(a+bd+be)(a'+c) (Distributive Law)\n= (a+b+c')(a+b+d)(a+b+d'+e)(a'+c) (Complements Law)\n= (a+b+c')(a+b+d)(a+b+d'+e)(a+c) (Absorption Law)\n= (a+b+c')(a+b+d)(a+d'+e)(a+c) (Commutative Law)\n= (a+b+c')(a+d'+e)(a+b+d)(a+c) (Commutative Law)"
+    },
+    "Question D": {
+        "question": "Simplify f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y into most simple form, which may not be sum-of-products. Again, justify each simplification step with Boolean algebra theorem used.",
+        "answer": "= x'y + x'z'y + z'y \n= x'y(1+z') + z'y (a+a'b = a + b) \n= x'y + z'y (x' y + x' y' = x'y)\n= y(x' + z') (a + ab = a) \n= y"
+    },
+    "Question E": {
+        "question": "Simplify f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y into most simple form, which may not be sum-of-products. Again, justify each simplification step with Boolean algebra theorem used.",
+        "answer": "f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y\n\nUsing the Associative Law: \n\nf(x,y,z) = x\u2019y + x\u2019z\u2019 + z\u2019y\n\nUsing the Distributive Law: \n\nf(x,y,z) = x\u2019y + y(x\u2019 + z\u2019)\n\nUsing the Identity Law (x + x' = 1): \n\nf(x,y,z) = y(1 + x' + z')\n\nUsing the Identity Law (1.x = x): \n\nf(x,y,z) = y(x + x' + z')\n \nFinally, using the Commutative Law: \n\nf(x,y,z) = y(x' + x + z')\n\nThe most simple form of the expression is: f(x,y,z) = y(x' + x + z')"
+    },
+    "Question F": {
+        "question": "Expand f(x,y,z) = xy + yz into canonical sum-of-products. What are the minterms that compose the canonical sum-of-products? Which rows of the truth table do the minterms correspond to? Write the truth table. ",
+        "answer": "The canonical sum-of-products is: \nxy'z'+xyz \n\nMinterms: xy'z', xyz \n\nThe minterms correspond to the rows in the truth table where the output column is 1. \n\nTruth Table: \n\nx  y  z  f(x,y,z)\n\n0  0  0    0 \n0  0  1    0 \n0  1  0    0 \n0  1  1    1 \n1  0  0    0 \n1  0  1    1 \n1  1  0    1 \n1  1  1    1 "
+    },
+    "Question G, Part A": {
+        "question": "Draw the symbol, Boolean equation, and truth table for a four-input OR gate.",
+        "answer": "Symbol:\n\nTruth Table:\n\nA | B | C | D | Y\n--|---|---|---|--\n0 | 0 | 0 | 0 | 0\n0 | 0 | 0 | 1 | 1\n0 | 0 | 1 | 0 | 1\n0 | 0 | 1 | 1 | 1\n0 | 1 | 0 | 0 | 1\n0 | 1 | 0 | 1 | 1\n0 | 1 | 1 | 0 | 1\n0 | 1 | 1 | 1 | 1\n1 | 0 | 0 | 0 | 1\n1 | 0 | 0 | 1 | 1\n1 | 0 | 1 | 0 | 1\n1 | 0 | 1 | 1 | 1\n1 | 1 | 0 | 0 | 1\n1 | 1 | 0 | 1 | 1\n1 | 1 | 1 | 0 | 1\n1 | 1 | 1 | 1 | 1\n\nBoolean Equation:\nY = A + B + C + D"
+    },
+    "Question G, Part B": {
+        "question": "Draw the symbol, Boolean equation, and truth table for a three-input XNOR gate.",
+        "answer": "Symbol:\n\n![XNOR gate symbol](https://constantberge.files.wordpress.com/2018/05/xnor.png)\n\nBoolean equation:\n\nA XNOR B XNOR C = (A \u22c5 B \u22c5 C) + (\u00acA \u22c5 \u00acB \u22c5 \u00acC)\n\nTruth Table:\n\n| A | B | C | Output |\n|----|----|----|--------|\n| 0 | 0 | 0 |  1     | \n| 0 | 0 | 1 |  0     |\n| 0 | 1 | 0 |  0     | \n| 0 | 1 | 1 |  1     | \n| 1 | 0 | 0 |  0     |\n| 1 | 0 | 1 |  1     |\n| 1 | 1 | 0 |  1     |\n| 1 | 1 | 1 |  1     |"
+    },
+    "Question G, Part C": {
+        "question": "Draw the symbol, Boolean equation, and truth table for a five-input NAND gate.",
+        "answer": "Symbol:\n\n![5-input NAND Gate Symbol](5-input-NAND-Gate-Symbol.jpg)\n\nBoolean Equation:\n\n![5-input NAND Gate Boolean Equation](5-input-NAND-Gate-Boolean-Equation.jpg)\n\nTruth Table:\n\n| A   | B   | C   | D   | E   | Y   |\n| --- | --- | --- | --- | --- | --- |\n| 0   | 0   | 0   | 0   | 0   | 1   |\n| 0   | 0   | 0   | 0   | 1   | 1   |\n| 0   | 0   | 0   | 1   | 0   | 1   |\n| 0   | 0   | 0   | 1   | 1   | 1   |\n| 0   | 0   | 1   | 0   | 0   | 1   |\n| 0   | 0   | 1   | 0   | 1   | 1   |\n| 0   | 0   | 1   | 1   | 0   | 1   |\n| 0   | 0   | 1   | 1   | 1   | 1   |\n| 0   | 1   | 0   | 0   | 0   | 1   |\n| 0   | 1   | 0   | 0   | 1   | 1   |\n| 0   | 1   | 0   | 1   | 0   | 1   |\n| 0   | 1   | 0   | 1   | 1   | 1   |\n| 0   | 1   | 1   | 0   | 0   | 1   |\n| 0   | 1   | 1   | 0   | 1   | 1   |\n| 0   | 1   | 1   | 1   | 0   | 1   |\n| 0   | 1   | 1   | 1   | 1   | 1   |\n| 1   | 0   | 0   | 0   | 0   | 1   |\n| 1   | 0   | 0   | 0   | 1   | 1   |\n| 1   | 0   | 0   | 1   | 0   | 1   |\n| 1   | 0   | 0   | 1   | 1   | 1   |\n| 1   | 0   | 1   | 0   | 0   | 1   |\n| 1   | 0   | 1   | 0   | 1   | 1   |\n| 1   | 0   | 1   | 1   | 0   | 1   |\n| 1   | 0   | 1   | 1   | 1   | 1   |\n| 1   | 1   | 0   | 0   | 0   | 1   |\n| 1   | 1   | 0   | 0   | 1   | 1   |\n| 1   | 1   | 0   | 1   | 0   | 1   |\n| 1   | 1   | 0   | 1   | 1   | 1   |\n| 1   | 1   | 1   | 0   | 0   | 0   |\n| 1   | 1   | 1   | 0   | 1   | 0   |\n| 1   | 1   | 1   | 1   | 0   | 0   |\n| 1   | 1   | 1   | 1   | 1   | 0   |"
+    },
+    "Question I": {
+        "question": "There are 16 different truth tables for Boolean functions of two variables. List each truth table. Give each one a short descriptive name (such as OR, NAND, and so on).",
+        "answer": "1. OR - all truth values in either column yield true; falses only in both columns \n2. NOR - all truth values in either column yield false; trues only in both columns \n3. XOR - only one true value in either column yields true; all other yield false \n4. XNOR - only one false value in either column yields false; all other yield true \n5. AND - all truth values in both columns yield true; falses only in either column\n6. NAND - all truth values in both columns yield false; trues only in either column\n7. A only - all truth values in A yield true, all in B yield false\n8. B only - all truth values in B yield true, all in A yield false\n9. A then B - all truth values in A yield true, all in B yield true only if A is true\n10. B then A - all truth values in B yield true, all in A yield true only if B is true\n11. A and not B - all truth values in A yield true, all in B yield false\n12. B and not A - all truth values in B yield true, all in A yield false\n13. Not A and Not B - all truth values in both columns yield false\n14. Not A then Not B - all truth values in A yield false, all in B yield false only if A is false\n15. Not B then Not A - all truth values in B yield false, all in B yield false only if B is false\n16. Const ants - all truth values in both columns yield the same truth value (either true or false)"
+    },
+    "Question J": {
+        "question": "Write a truth table for the function performed by the gate shown in the figure. The truth table should have two inputs, A and B. What is the name of this function? ",
+        "answer": "Truth Table:\nA | B | Output\n0 | 0 | 0\n0 | 1 | 1\n1 | 0 | 1\n1 | 1 | 0\n\nThis function is an XOR Gate."
+    },
+    "Question K": {
+        "question": "Write a truth table for the function performed by the gate in the figure. The truth table should have three inputs, A, B, and C.",
+        "answer": "A | B | C | Output\n-- | -- | -- | ------\n0 | 0 | 0 | 0\n0 | 0 | 1 | 0\n0 | 1 | 0 | 0\n0 | 1 | 1 | 0\n1 | 0 | 0 | 1\n1 | 0 | 1 | 1\n1 | 1 | 0 | 1\n1 | 1 | 1 | 0"
+    },
+    "Question L": {
+        "question": "Sketch a transistor-level circuit for a CMOS four-input NOR gate.",
+        "answer": "![Transistor-level CMOS four-input NOR gate](https://i.imgur.com/jmXijm8.png)"
+    },
+    "Execution Time": "0:02:50.257665",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

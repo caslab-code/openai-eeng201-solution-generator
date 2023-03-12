@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "For a 4-variable K-Map, why are the rows and columns arranged in the order: 00, 01, 11, 10?",
+        "answer": "The rows and columns of a 4-variable K-Map are arranged in the order 00, 01, 11, 10 to represent each combination of the four binary variables {A, B, C, D}. This is identical to the way binary numbers are written; 00 corresponds to 0, 01 corresponds to 1, 11 corresponds to 3, and 10 corresponds to 2. By using this arrangement, it becomes easier to identify and visualize patterns of the binary combinations."
+    },
+    "Question B": {
+        "question": "How do you assign values to don\u2019t care X in K-Maps when doing simplification?",
+        "answer": "When simplifying a logic expression using a Karnaugh Map (K-Map), don't care terms are marked with an 'X' on the K-Map since they do not impact the final result. When assigning values to don't care Xs, the most common practice is to assign them a 0. However, either a 0 or a 1 could be assigned to the X depending on the desired solution."
+    },
+    "Question C": {
+        "question": "Can you circle a rectangle of 2x3 cells in a K-Map, why or why not?",
+        "answer": "It is not possible to circle a rectangle of 2x3 cells in a K-Map. The K-Map is a structure designed to display Boolean logic (the relationship between two binary variables). Rectangles must have an even number of cells, which is not possible within a K-Map as it contains only 4 cells."
+    },
+    "Question D": {
+        "question": "What does 2x4 decoder do?",
+        "answer": "A 2x4 decoder is a circuit that takes two binary inputs and converts them into four outputs. The outputs are each logically associated with one of the possible combinations of binary inputs. For example, if the inputs are 0 and 0, then all outputs will be 0; if the inputs are 1 and 1, then all outputs will be 1. This type of decoder is commonly used in digital logic circuits to decode binary data."
+    },
+    "Question E": {
+        "question": "What is seven-segment display?",
+        "answer": "A seven-segment display is a type of electronic display used for displaying numerals, letters, and a few other characters. It is constructed out of seven individual bars each illuminated with a separate LED (light emitting diode). By changing the voltage from low (off) to high (on), the bars can be lit selectively to create the desired character or number."
+    },
+    "Execution Time": "0:00:24.178417",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

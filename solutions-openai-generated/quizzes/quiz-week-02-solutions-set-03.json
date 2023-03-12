@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "List the names of one-input and two-input logic gates, excluding XOR and XNOR.",
+        "answer": "One-input logic gates:\nNOT (or \"inverter\")\n\nTwo-input logic gates:\nAND \nOR \nNAND \nNOR"
+    },
+    "Question B": {
+        "question": "What is the difference between OR and XOR gate?",
+        "answer": "The OR gate produces a high output (1) if any of its inputs is high. The XOR gate produces a high output if either, but not both, of its inputs is high."
+    },
+    "Question C": {
+        "question": "Can we have more than two-input gates?",
+        "answer": "Yes, there are a variety of mult-input gates available. For example, three-input AND gates, four-input OR gates, and seven-input NAND gates are all available."
+    },
+    "Question D": {
+        "question": "What is the purpose of \"bubble pushing\"?",
+        "answer": "Bubble pushing is a strategy that is used by investors to temporarily increase the price of a stock. It involves buying large amounts of shares of a stock and then selling them as soon as the price rises due to the increased demand. This can create an artificial short-term increase in the price of the stock, which can then be used to generate a profit for the investor."
+    },
+    "Execution Time": "0:00:15.774724",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

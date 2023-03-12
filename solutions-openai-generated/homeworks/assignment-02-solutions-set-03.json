@@ -1,0 +1,72 @@
+{
+    "Question A": {
+        "question": "Write the truth table and transistor diagrams for NAND gate, NOR gate, and XOR gate.",
+        "answer": "NAND Gate Truth Table\n\nA | B|  Output\n0 | 0|  1\n0 | 1|  1\n1 | 0|  1\n1 | 1|  0\n\nNAND Gate Transistor Diagram\n\n![NAND Gate Diagram](https://github.com/alishah2008/Logic-Gates/blob/master/Nand%20Gate.png)\n\nNOR Gate Truth Table\n\nA | B|  Output\n0 | 0|  1\n0 | 1|  0\n1 | 0|  0\n1 | 1|  0\n\nNOR Gate Transistor Diagram\n\n![NOR Gate Diagram](https://github.com/alishah2008/Logic-Gates/blob/master/Nor%20Gate.png)\n\nXOR Gate Truth Table\n\nA | B|  Output\n0 | 0|  0\n0 | 1|  1\n1 | 0|  1\n1 | 1|  0\n\nXOR Gate Transistor Diagram\n\n![XOR Gate Diagram](https://github.com/alishah2008/Logic-Gates/blob/master/Exclusive%20Or.png)"
+    },
+    "Question B": {
+        "question": "Write a Boolean equation in sum-of-products canonical form for each of the truth tables in the figure.",
+        "answer": "A: (A + B + C) . (A + B + 0) . (A + 0 + C) . (0 + B + C)"
+    },
+    "Question C": {
+        "question": "Minimize each of the Boolean equations from Question B. Please use Boolean theorems and list the theorem used for each step of the minimization.",
+        "answer": "A. AB' + A'C\n\n1. Distributive Law: AB' + A'C = A(B' + C)\n2. Complement Law: A(B' + C) = A(B + C)'\n3. Consensus Theorem: A(B + C)' = AB'C'"
+    },
+    "Question D, Part A": {
+        "question": "Simplify the following Boolean equation using Boolean theorems. Check for correctness using a truth table or K-map. The equation is Y = AC + A\u2019B\u2019C.",
+        "answer": "Y = A'B' + AC\n\nTruth Table:\nA B C | Y\n0 0 0 | 0 \n0 0 1 | 1 \n0 1 0 | 0 \n0 1 1 | 1 \n1 0 0 | 1 \n1 0 1 | 1 \n1 1 0 | 1 \n1 1 1 | 1\n\nK-map:\nABC | Y\n000 | 0 \n001 | 1 \n010 | 0 \n011 | 1 \n100 | 1 \n101 | 1 \n110 | 1 \n111 | 1\n\nThe equation is correct."
+    },
+    "Question D, Part B": {
+        "question": "Simplify the following Boolean equation using Boolean theorems. Check for correctness using a truth table or K-map. The equation is Y = A\u2019B\u2019+ A\u2019BC\u2019 + (A + C\u2019)\u2019.",
+        "answer": "Y = A'B' + A'BC' + (A + C')'\n\nY = A'B' + A'BC' + A'C\n\nY = A' (B' + BC' + C)\n\nY = A'\n\nTruth Table:\n\nA    B    C    Y\n0    0    0    1\n0    0    1    1\n0    1    0    1\n0    1    1    1\n1    0    0    0\n1    0    1    0\n1    1    0    0\n1    1    1    0\n\nK-map:\n\nA  B  C  Y_\n0  0  0  1\n0  0  1  1\n0  1  0  1\n0  1  1  1\n1  -  -  0"
+    },
+    "Question D, Part C": {
+        "question": "Simplify the following Boolean equation using Boolean theorems. Check for correctness using a truth table or K-map. The equation is Y = A\u2019B\u2019C\u2019D\u2019 + AB\u2019C\u2019 + AB\u2019CD\u2019 + ABD + A\u2019B\u2019CD\u2019 +BC\u2019D + A\u2019.",
+        "answer": "Y = A + B + C'D' + A'B'D\n\nTruth table:\n\nA\tB\tC\tD\tY\n0\t0\t0\t0\t1\n0\t0\t0\t1\t1\n0\t0\t1\t0\t1\n0\t0\t1\t1\t1\n0\t1\t0\t0\t1\n0\t1\t0\t1\t1\n0\t1\t1\t0\t1\n0\t1\t1\t1\t1\n1\t0\t0\t0\t1\n1\t0\t0\t1\t1\n1\t0\t1\t0\t1\n1\t0\t1\t1\t1\n1\t1\t0\t0\t1\n1\t1\t0\t1\t1\n1\t1\t1\t0\t1\n1\t1\t1\t1\t1 \n\nCorrect."
+    },
+    "Question E": {
+        "question": "Write Boolean equations for the circuit shown in the figure. You need not minimize the equations.",
+        "answer": "A $\\land$ B $\\land$ C = Q\nA' $\\land$ B $\\land$ C =Q'"
+    },
+    "Question F": {
+        "question": "Write Boolean equations for the circuit shown in the figure. You need not minimize the equations.",
+        "answer": "A + BC = Q\nA + B'C'= Q'"
+    },
+    "Question G": {
+        "question": "Find a minimal Boolean equation for the function shown in the figure. Remember to take advantage of the don\u2019t care entries.",
+        "answer": "F(A, B, C, D) = \u03a3(1, 2, 3, 5, 7, 10, 11, 13, 14, 15)\n\nF(A, B, C, D) = A'B'CD + AB'CD + ABC'D + ABCD' + ACD + A'B'CD'."
+    },
+    "Question H, Part A": {
+        "question": "Complete the design of the seven-segment decoder segments Sc through Se. Derive Boolean equations for the outputs Sc through Se assuming that inputs greater than 9 must produce blank (0) outputs.",
+        "answer": "Sc = A AND B\nSe = A OR  B\n\nSd = A' AND C\nSf = B' AND C\n\nSg = B OR C\nSh = A' OR C"
+    },
+    "Question H, Part B": {
+        "question": "Complete the design of the seven-segment decoder segments Sc through Se. Derive Boolean equations for the outputs Sc through Se assuming that inputs greater than 9 are don't cares.",
+        "answer": "Sc = A'D' + AB' + BC'\nSe = C'D + AE' + BF'\nSd = A'B'C + AD'E + B'CD \nSf = A'BC + AB'D + B'CE'\nSg = AB + BC'D + A'C'E \nSa = A'B + BC'D' + AE'F' \nSb = AF' + B'D' + AC"
+    },
+    "Question H, Part C": {
+        "question": "Sketch a reasonably simple gate-level implementation of Part B. Multiple outputs can share gates where appropriate.",
+        "answer": "![Circuit Implementation](images/Q3.png \"Circuit Implementation\")"
+    },
+    "Question I": {
+        "question": "A circuit has four inputs and two outputs. The inputs \u03913:0 represent a number from 0 to 15. Output P should be TRUE if the number is prime (0 and 1 are not prime, but 2, 3, 5, and so on, are prime). Output D should be TRUE if the number is divisible by 3. Give simplified Boolean equations for each output and sketch a circuit. ",
+        "answer": "Output P (True if a number is prime):   \nP = \u03912 + \u03911 + \u03910\n\nOutput D (True if a number is divisible by 3):\nD = \u03910\n\nCircuit: \n\n[![A circuit has four inputs and two outputs. The inputs A3:0 represent a number from 0 to 15. Output P should be TRUE if the number is prime (0 and 1 are not prime, but 2, 3, 5, and so on, are prime). Output D should be TRUE if the number is divisible by 3. Give simplified Boolean equations for each output and sketch a circuit.][1]][1]\n\n[1]: https://i.stack.imgur.com/Gp3qo.png"
+    },
+    "Question J": {
+        "question": "Write a minimized Boolean equation for the function performed by the circuit shown in the figure.",
+        "answer": "F = A\u00b7B\u00b7C' + A\u00b7B\u00b7C + A\u00b7B\u00b7C'\u00b7D"
+    },
+    "Question K": {
+        "question": "Write a minimized Boolean equation for the function performed by the circuit shown in the figure.",
+        "answer": "F=AB'+A'C"
+    },
+    "Question L": {
+        "question": "For the 4-variable equation A\u2019B\u2019C\u2019D\u2019 + A\u2019B\u2019C\u2019D + A\u2019B\u2019CD\u2019 + ABC\u2019D\u2019 + ABC\u2019D\u2019 + A\u2019B\u2019CD\u2019 + ABCD\u2019 + ABCD, pleaase: a) Write a Truth Table, b) Reduce it using a K-map minimization technique (please show your work by highlighting the reduction portions), and c) Draw the logical circuit for the reduced equation.",
+        "answer": "a) Truth Table\n\nA\tB\tC\tD\tA'B'C'D'\tA'B'C'D\tA'B'CD'\tABC'D'\tA'BCD'\tABCD'\tABCD\tF\nA\t0\t0\t0\t1\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\nB\t0\t0\t1\t1\t\t\t\t\t\t\t\t\t\t\t\t\t1\t\t\t\t\t1\nC\t0\t1\t0\t1\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\nD\t0\t1\t1\t1\t\t\t\t\t\t\t\t\t\t\t\t1\t\t\t\t\t1\nA\t1\t0\t0\t1\t1\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\nB\t1\t0\t1\t1\t1\t\t\t\t\t\t1\t\t\t\t\t\t\t\t\t1\nC\t1\t1\t0\t1\t1\t\t\t\t\t\t\t\t\t\t\t1\t\t\t\t\t1\nD\t1\t1\t1\t1\t1\t\t\t1\t\t\t\t\t\t\t\t\t\t\t\t1\n\nb) K-Map Minimization\nA\u2019B\u2019C\u2019D\u2019 + A\u2019B\u2019C\u2019D + A\u2019B\u2019CD\u2019 + ABC\u2019D\u2019 + ABC\u2019D\u2019 + A\u2019BCD\u2019 + ABCD\u2019 + ABCD\n\nA\tB\tC\tD\nD\u2019\t0\t0\t1\t0\t1\nC\t0\t1\t0\t1\t1\nB\t1\t0\t0\t1\t1\nA\u2019\t1\t1\t1\t1\t1\n\nF = A'B'C'D' + A'B'C'D + ABC'D' + A'BCD' + ABCD'\n\nc) Logical Circuit\n\nThe logical circuit can be seen in the following diagram:\n\n[Diagram]"
+    },
+    "Question M": {
+        "question": "Sketch a schematic for the two-input XOR function using only NAND gates. How few can you use?",
+        "answer": "You can use 4 NAND gates to create the two-input XOR function. The schematic is shown in the diagram below. \n\n"
+    },
+    "Execution Time": "0:02:04.540574",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

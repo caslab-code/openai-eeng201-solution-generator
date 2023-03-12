@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "What is the difference between Mealy and Moore state machines?",
+        "answer": "Mealy state machines are state machines whose outputs depend on both the current state and the current input. They are also known as output-based state machines. The output of the machine is immediately dependent on the input given.\n\nMoore state machines are state machines whose outputs depend only on the current state. The entire output does not change until the current state changes. The output of the machine is not immediately dependent on the input given."
+    },
+    "Question B": {
+        "question": "What is the next state logic?",
+        "answer": "The next state logic is the way a process behaves when it receives inputs and processes them. It is the model used to predict the state that the process will transition to based on the received inputs. It is used to design, simulate and analyse the behaviour of a system in order to achieve a desired outcome."
+    },
+    "Question C": {
+        "question": "What is the output logic?",
+        "answer": "Output logic is the system through which input signals are processed and transformed into an output signal with a desired result. It is the logical sequence of commands used to make decisions and produce results based upon the input data. Output logic can be programmed into a computer system to provide specific results or it can be developed from an algorithm or a flowchart."
+    },
+    "Question D": {
+        "question": "What is difference between binary and one-hot state encoding in state machines?",
+        "answer": "Binary state encoding is a method of representing a state machine in which each state is encoded by a single binary value. Each state is encoded by a single binary number, which is usually represented by a single bit. This means there is no separation between states and all states are treated the same in terms of data representation.\n\nOne-hot state encoding is a method of encoding state machines in which each state is represented by a distinct binary value. Unlike binary state encoding, each state is clearly distinguished from one another, making it possible to identify specific states in a state machine. Furthermore, the state machine can be efficiently described and operated with the one-hot encoding scheme."
+    },
+    "Question E": {
+        "question": "How would use of K-Maps help in design of state machines?",
+        "answer": "K-Maps can help in the design of state machines by reducing the number of Boolean equations needed to solve a problem and by allowing designers to quickly identify which combinations of states will trigger a certain output. It is also a useful tool for visualizing the various states and transitions in a state machine. By organizing the inputs and outputs into a visual chart, it makes it easier to identify which conditions will trigger which transitions, thus aiding in the design process."
+    },
+    "Execution Time": "0:00:15.400309",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

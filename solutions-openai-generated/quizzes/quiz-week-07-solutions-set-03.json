@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "What is the difference between Mealy and Moore state machines?",
+        "answer": "Mealy and Moore state machines are both sequential logic circuits that encode a particular set of inputs to produce a corresponding set of outputs. The difference between the two is that a Mealy machine produces output as soon as an input is received, whereas a Moore machine produces output only after all input is processed. Additionally, Mealy machines are simpler, with fewer states, and can respond faster due to the immediacy of their outputs. On the other hand, Moore machines are more robust and predictable, since the outputs are not affected by the inputs. For these reasons, Moore machines are often used in safety and mission-critical applications."
+    },
+    "Question B": {
+        "question": "What is the next state logic?",
+        "answer": "The next state logic is a system that is used to define, control, and govern all aspects of a program or system. It is essentially a process of transitioning between states in a set of programmed instructions. For example, in a game of chess, the board configurations in each turn can be thought of as states, and the logic of the game defines the transitions between each of the states."
+    },
+    "Question C": {
+        "question": "What is the output logic?",
+        "answer": "Output logic is a process of obtaining the desired output based on given inputs and a set of rules or algorithms. To create output logic, a programmer will create an algorithm or set of instructions that maps the input to the desired output."
+    },
+    "Question D": {
+        "question": "What is difference between binary and one-hot state encoding in state machines?",
+        "answer": "Binary state encoding is a type of encoding that assigns each state a binary code. In this system, each state is assigned a unique binary sequence- either a \u20181\u2019 or a \u20180\u2019. This allows the state machine to quickly identify the current active state while minimizing the amount of memory used.\n\nOne-hot state encoding is a type of encoding that assigns a unique bit to each state in the state machine. It involves assigning each state its own logical '1' bit and all other states a logical '0' bit. This makes it easier to detect the currently active state, because only one bit value is '1', and all other bit values are '0'. However, it does take up more memory, as each state will require one bit to represent it."
+    },
+    "Question E": {
+        "question": "How would use of K-Maps help in design of state machines?",
+        "answer": "K-Maps make it much easier to arrive at the optimal design of state machines. A K-Map presents input signals into a grid format and can be used to determine the output for each combination of input signals. This makes it simpler and less time consuming to determine the state changes, output signals, and other parameters of the state machine. As a result, K-Maps can help provide an engineer with a more efficient state machine design."
+    },
+    "Execution Time": "0:00:23.530331",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "What is the difference between nMOS and pMOS transistors?",
+        "answer": "NMOS transistors use a negative voltage applied to the gate to turn on current flow. This type of transistor is used for logic operations and is generally more power efficient than PMOS transistors.\n\nPMOS transistors turn on when a positive voltage is applied to the gate. PMOS transistors usually need more power, but they are faster than NMOS transistors. They are used in integrated circuits, such as DRAM and SRAM."
+    },
+    "Question B": {
+        "question": "How many nMOS and pMOST transistors are used to build a NOT gate? How are they connected?",
+        "answer": "A NOT gate usually consists of one nMOS and one pMOS transistor. They are connected in series, with their respective sources connected to the ground rail, their drains connected to the input and output, and the gate of the nMOS connected to the gate of the pMOS, both connected to a positive voltage source. The nMOS is usually referred to as an \"inverter\" and is responsible for inverting the input signal, while the pMOS is responsible for driving the output."
+    },
+    "Question C": {
+        "question": "What is difference between dynamic power and static power?",
+        "answer": "Dynamic power refers to the amount of power consumed by the device while executing instructions while static power is the amount of power consumed by a device when its static (not executing instructions). Dynamic power is usually much higher than static power, especially in high-performance CPUs, as it takes a lot more energy to perform instructions and computations in a shorter amount of time."
+    },
+    "Question D": {
+        "question": "What is the difference between a product term and a minterm?",
+        "answer": "A product term is an AND of variables that can represent a Boolean expression, while a minterm is an OR of variables (ANDed with its negations) that can also represent a Boolean expression. In other words, a product term is composed of variables, while a minterm is composed of both variables and their negations."
+    },
+    "Execution Time": "0:00:21.919279",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

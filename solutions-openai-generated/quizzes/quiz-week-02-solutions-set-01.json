@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "List the names of one-input and two-input logic gates, excluding XOR and XNOR.",
+        "answer": "One-input logic gates: NOT, NAND, NOR \nTwo-input logic gates: AND, OR"
+    },
+    "Question B": {
+        "question": "What is the difference between OR and XOR gate?",
+        "answer": "The OR gate outputs a high signal when either one or both of the inputs are high. The XOR gate, on the other hand, outputs a high signal only when one, but not both inputs are high."
+    },
+    "Question C": {
+        "question": "Can we have more than two-input gates?",
+        "answer": "Yes, there are a variety of logic gates that come with multiple inputs, such as 4-way, 8-way, 16-way and 32-way input gates. These may be used to combine multiple inputs into a single output."
+    },
+    "Question D": {
+        "question": "What is the purpose of \"bubble pushing\"?",
+        "answer": "Bubble pushing is a method of rearranging the elements of an array so that the largest elements are \u201cpushed\u201d to the end. It does this by repeatedly looping through the array and comparing adjacent elements, and swapping them if the element is larger than the one that precedes it. By continuing to \u201cpush\u201d the largest elements towards the end, sorting the array from smallest to largest is achievable."
+    },
+    "Execution Time": "0:00:19.427350",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

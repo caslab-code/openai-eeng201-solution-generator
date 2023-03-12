@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "What is the difference between sum of products and a canonical sum of products expressions?",
+        "answer": "Sum of products refers to a Boolean expression that is expressed as the sum of minterms in a Boolean algebra. A canonical sum of products expression is a sum of products expression in its simplest form, with all terms expressed in a logically equivalent fashion. It has been reduced to its simplest form, by combining multiple terms so that it can use fewer variables and their complements."
+    },
+    "Question B": {
+        "question": "What is the difference between sum of products and product of sums expression?",
+        "answer": "The difference between a sum of products expression and a product of sums expression is that with a sum of products, each term is the product of two variables or constants, whereas with a product of sums, each term is the sum of two variables or constants. Sum of products expressions are used to form logical expressions in Boolean algebra, while product of sums expressions are used to represent the same expressions in polynomial form."
+    },
+    "Question C": {
+        "question": "Does minimal sum of products expression always result in smallest number of logic gates? Why or why not?",
+        "answer": "No, minimal sum of products expression does not always result in the smallest number of logic gates. The number of logic gates depends on the complexity of the expression, so the number of gates may still be high even when the expression is simplified. Additionally, certain simplification techniques can generate fewer gates, such as K-maps or simplification techniques that use the Quine\u2013McCluskey algorithm."
+    },
+    "Question D": {
+        "question": "What is an universal gate? Is NAND, NOR, or XOR (or more than one of them) an universal gate?",
+        "answer": "An universal gate is a logic gate that can be used to build any other logic gate. NAND, NOR, and XOR can all be used to construct any other type of logic gate, so they are all considered universal gates."
+    },
+    "Execution Time": "0:00:16.781182",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

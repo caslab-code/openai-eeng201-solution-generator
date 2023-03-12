@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "What is the difference between sum of products and a canonical sum of products expressions?",
+        "answer": "The sum of products expression is a type of Boolean expression that is composed of the sum of the logical products of variables or constants. It is a direct way to express a logic circuit in algebraic form. A canonical sum of products (CSP) expression typically results from applying a Karnaugh mapping or Quine-McCluskey algorithm to arrive at the most reduced minterm form of the Boolean expression. A CSP expression is simplified so that it is easily implemented in a logic circuit."
+    },
+    "Question B": {
+        "question": "What is the difference between sum of products and product of sums expression?",
+        "answer": "Sum of products (SOP) is an algebraic expression in which two or more variables are multiplied together and then summed up. The product of sums (POS) is an algebraic expression in which two or more variables are summed up and then multiplied together."
+    },
+    "Question C": {
+        "question": "Does minimal sum of products expression always result in smallest number of logic gates? Why or why not?",
+        "answer": "No, minimal sum of products expression does not always result in the smallest number of logic gates. It depends on the structure of the resulting expression and the types of logic gates needed to implement it. For example, if the resulting expression is composed of primarily AND and OR gates, minimal sum of products may require more gates than using other techniques that employ other gate types such as NAND or NOR gates."
+    },
+    "Question D": {
+        "question": "What is an universal gate? Is NAND, NOR, or XOR (or more than one of them) an universal gate?",
+        "answer": "A universal gate is a logic gate that can implement all possible logic functions, regardless of the number of input variables. Examples of universal gates include NAND, NOR, and XOR; all three of these gates are universal."
+    },
+    "Execution Time": "0:00:13.846930",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

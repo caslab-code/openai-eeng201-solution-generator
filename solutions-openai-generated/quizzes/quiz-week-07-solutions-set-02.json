@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "What is the difference between Mealy and Moore state machines?",
+        "answer": "Mealy and Moore state machines are two types of finite state machines (FSMs). The main difference between the two is in how inputs are handled. In a Mealy state machine, the output of the state is a function of both the current state and the input to the state; in a Moore state machine, the output of the state is a function only of the current state. In addition, Mealy state machines are generally easier to construct than Moore state machines, as fewer states are needed."
+    },
+    "Question B": {
+        "question": "What is the next state logic?",
+        "answer": "The next state logic is a type of digital logic used to transition a circuit between different states. It uses Boolean logic to define changes in the system, with each defined state having its own set of conditions and logic associated with it. This type of logic is used in a wide range of applications, including computer hardware, industrial and process control systems, and embedded systems."
+    },
+    "Question C": {
+        "question": "What is the output logic?",
+        "answer": "Output logic is a set of rules, processes, or algorithms used to define the output of a task, process, or system. Output logic is related to input logic and can be thought of as the instructions on how to turn an input into an output. It is a crucial part of developing computer algorithms, as it defines how to process information and send the results to users."
+    },
+    "Question D": {
+        "question": "What is difference between binary and one-hot state encoding in state machines?",
+        "answer": "Binary state encoding is a method of representing the states of a state machine where each state is represented by a single binary variable. The variable is either true (1) or false (0). The binary variable changes its value whenever the state of the state machine changes.\n\nOne-hot state encoding is a method of representing the states of a state machine where each state is represented by a set of boolean variables. Each variable corresponds to a single state and is True when that state is active, and False when it is not. This encoding is most useful when each state has an equivalent number of transitions and is logically distinct from other states. The state is determined by the combination of variables which are set to True."
+    },
+    "Question E": {
+        "question": "How would use of K-Maps help in design of state machines?",
+        "answer": "K-Maps (also known as Karnaugh Maps) are graphical methods used to simplify Boolean algebra expressions and are effective in identifying minimal expressions. This makes them incredibly useful when designing and debugging state machines. K-Maps can be used to identify which input patterns trigger which state transitions and can help determine the correct timing and duration of state transitions. They can also be used to assess the validity of existing state machine designs."
+    },
+    "Execution Time": "0:00:16.585064",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

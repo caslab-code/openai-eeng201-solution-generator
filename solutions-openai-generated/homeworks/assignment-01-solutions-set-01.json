@@ -1,0 +1,56 @@
+{
+    "Question A": {
+        "question": "Simplify f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y into sum-of-products form. Follow example from lecture 3 slides, however, at each step of the simplification process write down the Boolean algebra theorem used in this step. Note lecture slides sometimes used multiple theorems in each step in the slides, your solutions should use only one theorem at each step and may have more steps than shown in the slides. List of Boolean algebra theorems can be found in the supplementary materials on Canvas site.",
+        "answer": "f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y\n\n= (x\u2019y + x\u2019z\u2019 + z\u2019y)\t\t\t\t\t\t\t\t(Distributive Law)\n\n= (x'y + z'y + x'z')\t\t\t\t\t\t\t\t(Commutative Law)\n\n= y(x' + z') + x'z'\t\t\t\t\t\t\t\t(Distributive Law)\n\n= y + x'z'\t\t\t\t\t\t\t\t\t\t\t(Idempotent Law)"
+    },
+    "Question B": {
+        "question": "Simplify the following Boolean equation into sum-of-products form. Again, justify each simplification step with Boolean algebra theorem used: f(a,b,c,d,e) = (a+b+c\u2019)(a+b+d)(a+b+e)(a+d\u2019+e)(a\u2019+c).",
+        "answer": "f(a,b,c,d,e) = (a + b + c')(a + b + d)(a + b + e)(a + d' + e)(a' + c)\n\nStep 1: Using the Distributive Law: \nf(a,b,c,d,e) = (a+b)(a+d)(a+e)(a+d'+e)(a'+c) + (a+b)(a+d)(a+e)(a+d'+e)(b+c') + (a+b)(a+d)(a+e)(a'+c)(b+d')\n\nStep 2: Using the Associative and Commutative Laws: \nf(a,b,c,d,e) = (a+d'+e)(a+b+c')(a+d)(a+e)(a'+c) + (a+d'+e)(a+b+d)(a+e)(a'+c)(b+c') \n\nStep 3: Using the Distributive Law: \nf(a,b,c,d,e) = (a+d'+e)(a'+c)(a + b + c')(a + b + d)(a + e) + (a+d'+e)(a'+c)(a + b + d)(a+e)(b + c')\n\nStep 4: Using the Associative Law: \nf(a,b,c,d,e) = (a+d'+e)(a'+c)(a + b)(a+ e)(b + c' + d) \n\nAnswer: f(a,b,c,d,e) = (a+d'+e)(a'+c)(a + b)(a+ e)(b + c' + d)"
+    },
+    "Question C": {
+        "question": "Simplify the following Boolean equation into sum-of-products form. Again, justify each simplification step with Boolean algebra theorem used: f(a,b,c,d,e) = (a+b+c\u2019)(a+b+d)(a+b+e)(a+d\u2019+e)(a\u2019+c).",
+        "answer": "f(a, b, c, d, e) = (a + b)(a+d'+e)(a\u2019 + c) ----> Distributive Property\n\nf(a, b, c, d, e) = (a + b)(a + d')(a + e)(a\u2019 + c) ----> Complements Theorem\n\nf(a, b, c, d, e) = a(a\u2019 + b + d' + e) + b(a+d' + e) + c(a' + d' + e) ----> Distributive Property\n\nf(a, b, c, d, e) = a'bd'e + abd'e + ac'd'e ----> Sum of Products Form"
+    },
+    "Question D": {
+        "question": "Simplify f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y into most simple form, which may not be sum-of-products. Again, justify each simplification step with Boolean algebra theorem used.",
+        "answer": "= x'yz' + x'y + z'y \n\nBy the associative law, \n= x'yz' + (x'+z')y\n\nBy the distributive law,\n= (x'+z')y + x'yz'\n\nBy the commutative law,\n= (x'+z')y + (x'z'+z'y)  \n\nBy the absorption law,\n= (x'+z')y"
+    },
+    "Question E": {
+        "question": "Simplify f(x,y,z) = (x\u2019(y+z\u2019)+z\u2019)y into most simple form, which may not be sum-of-products. Again, justify each simplification step with Boolean algebra theorem used.",
+        "answer": "f(x,y,z) = (x'(y+z')+z')y\n\n= (x'y +x'z' + z'y)                            [Distributive Law]\n\n= (x'y + z'y + x'z')                           [Commutative Law]\n\n= x'(y + z') + z'y                             [Associative Law]\n\n= x'y + z'y                                    [Absorption Law]\n\n= y(x'+z')                                     [Distributive Law]\n\nThe most simple form of the equation is y(x'+z'), which is in product-of-sums form."
+    },
+    "Question F": {
+        "question": "Expand f(x,y,z) = xy + yz into canonical sum-of-products. What are the minterms that compose the canonical sum-of-products? Which rows of the truth table do the minterms correspond to? Write the truth table. ",
+        "answer": "The canonical sum-of-products form of f(x,y,z) = xy + yz is xyz + xy'z' + x'y'z. The minterms that compose the canonical sum-of-products are xyz, xy'z', and x'y'z. These minterms correspond to rows 6, 3, and 4 of the truth table, respectively. \n\nTruth Table:\n\n| x | y | z | f(x,y,z) |\n|---|---|---|-----------|\n| 0 | 0 | 0 | 0         |\n| 0 | 0 | 1 | 0         |\n| 0 | 1 | 0 | 0         |\n| 0 | 1 | 1 | 1         |\n| 1 | 0 | 0 | 0         |\n| 1 | 0 | 1 | 1         |\n| 1 | 1 | 0 | 1         |\n| 1 | 1 | 1 | 1         |"
+    },
+    "Question G, Part A": {
+        "question": "Draw the symbol, Boolean equation, and truth table for a four-input OR gate.",
+        "answer": "Symbol:\n\n   __\n  |  |\nA--o--B\n  |__|\n \n  C--o--D\n\nBoolean Equation:\nA + B + C + D\n\nTruth Table:\nA | B | C | D | Output\n------------------------\n0 | 0 | 0 | 0 | 0\n0 | 0 | 0 | 1 | 1\n0 | 0 | 1 | 0 | 1\n0 | 0 | 1 | 1 | 1\n0 | 1 | 0 | 0 | 1\n0 | 1 | 0 | 1 | 1\n0 | 1 | 1 | 0 | 1\n0 | 1 | 1 | 1 | 1\n1 | 0 | 0 | 0 | 1\n1 | 0 | 0 | 1 | 1\n1 | 0 | 1 | 0 | 1\n1 | 0 | 1 | 1 | 1\n1 | 1 | 0 | 0 | 1\n1 | 1 | 0 | 1 | 1\n1 | 1 | 1 | 0 | 1\n1 | 1 | 1 | 1 | 1"
+    },
+    "Question G, Part B": {
+        "question": "Draw the symbol, Boolean equation, and truth table for a three-input XNOR gate.",
+        "answer": "Symbol: \n\nVisual representation of a 3 input XNOR gate \n\n/ \\_ _ _\n \\   /\\\n  \\_/  \\\n   _   _\\ \n  (___)\n\nBoolean Equation: \n\nY= x1 XNOR x2 XNOR x3 \n\nTruth Table: \n\nx1  | x2 | x3 | Y\n----------------\n 0  | 0  | 0  | 1\n 0  | 0  | 1  | 0\n 0  | 1  | 0  | 0\n 0  | 1  | 1  | 1\n 1  | 0  | 0  | 0\n 1  | 0  | 1  | 1\n 1  | 1  | 0  | 1\n 1  | 1  | 1  | 0"
+    },
+    "Question G, Part C": {
+        "question": "Draw the symbol, Boolean equation, and truth table for a five-input NAND gate.",
+        "answer": "Symbol:\n\n\\         \n \\          \n  \\         \n---O\n\nBoolean Equation:\n\n(A \u2227 B \u2227 C \u2227 D \u2227 E) \u2192 0\n\nTruth Table:\n\nA | B | C | D | E | Output\n0 | 0 | 0 | 0 | 0 | 1\n0 | 0 | 0 | 0 | 1 | 1\n0 | 0 | 0 | 1 | 0 | 1\n0 | 0 | 0 | 1 | 1 | 1\n0 | 0 | 1 | 0 | 0 | 1\n0 | 0 | 1 | 0 | 1 | 1\n0 | 0 | 1 | 1 | 0 | 1\n0 | 0 | 1 | 1 | 1 | 1\n0 | 1 | 0 | 0 | 0 | 1\n0 | 1 | 0 | 0 | 1 | 1\n0 | 1 | 0 | 1 | 0 | 1\n0 | 1 | 0 | 1 | 1 | 1\n0 | 1 | 1 | 0 | 0 | 1\n0 | 1 | 1 | 0 | 1 | 1\n0 | 1 | 1 | 1 | 0 | 1\n0 | 1 | 1 | 1 | 1 | 1\n1 | 0 | 0 | 0 | 0 | 1\n1 | 0 | 0 | 0 | 1 | 1\n1 | 0 | 0 | 1 | 0 | 1\n1 | 0 | 0 | 1 | 1 | 1\n1 | 0 | 1 | 0 | 0 | 1\n1 | 0 | 1 | 0 | 1 | 1\n1 | 0 | 1 | 1 | 0 | 1\n1 | 0 | 1 | 1 | 1 | 1\n1 | 1 | 0 | 0 | 0 | 1\n1 | 1 | 0 | 0 | 1 | 1\n1 | 1 | 0 | 1 | 0 | 1\n1 | 1 | 0 | 1 | 1 | 1\n1 | 1 | 1 | 0 | 0 | 1\n1 | 1 | 1 | 0 | 1 | 0\n1 | 1 | 1 | 1 | 0 | 0\n1 | 1 | 1 | 1 | 1 | 0"
+    },
+    "Question I": {
+        "question": "There are 16 different truth tables for Boolean functions of two variables. List each truth table. Give each one a short descriptive name (such as OR, NAND, and so on).",
+        "answer": "1. AND - Output is 1 only if both inputs are 1\n\nA\tB\tOutput\n0\t0\t0\n0\t1\t0\n1\t0\t0\n1\t1\t1\n\n2. OR - Output is 1 if either of the inputs are 1\n\nA\tB\tOutput\n0\t0\t0\n0\t1\t1\n1\t0\t1\n1\t1\t1\n\n3. NAND - Output is 0 unless both inputs are 1\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t1\n1\t0\t1\n1\t1\t0\n\n4. NOR - Output is 1 only if both inputs are 0\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t0\n1\t0\t0\n1\t1\t0\n\n5. XOR - Output is 1 if one of the inputs is 1 but not both\n\nA\tB\tOutput\n0\t0\t0\n0\t1\t1\n1\t0\t1\n1\t1\t0\n\n6. XNOR - Output is 1 only if both inputs are the same\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t0\n1\t0\t0\n1\t1\t1\n\n7. Implication - Output is 1 unless first input is 1 and second input is 0\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t1\n1\t0\t0\n1\t1\t1\n\n8. Converse Implication - Output is 1 unless first input is 0 and second input is 1\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t0\n1\t0\t1\n1\t1\t1\n\n9. Negation - Output is 0 when input is 1 and output is 1 when input is 0 \n\nA\tOutput\n0\t1\n1\t0\n\n10. Double Negation - Output is 0 when input is 0 and output is 1 when input is 1\n\nA\tOutput\n0\t0\n1\t1\n\n11. Exclusive OR - Output is 1 only when inputs are different\n\nA\tB\tOutput\n0\t0\t0\n0\t1\t1\n1\t0\t1\n1\t1\t0\n\n12. Exclusive NOR - Output is 0 only when inputs are different\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t0\n1\t0\t0\n1\t1\t1\n\n13. Contrapositive - Output is 1 unless first input is 0 and second input is 1\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t1\n1\t0\t1\n1\t1\t0\n\n14. Biconditional - Output is 1 only if both inputs are the same\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t0\n1\t0\t0\n1\t1\t1\n\n15. Biconditional Implication - Output is 1 unless first input is 1 and second input is 0\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t0\n1\t0\t1\n1\t1\t1\n\n16. Negation Implication - Output is 0 unless first input is 0 and second input is 1\n\nA\tB\tOutput\n0\t0\t1\n0\t1\t0\n1\t0\t1\n1\t1\t0"
+    },
+    "Question J": {
+        "question": "Write a truth table for the function performed by the gate shown in the figure. The truth table should have two inputs, A and B. What is the name of this function? ",
+        "answer": "Truth Table: \nA    B    Output\n0    0    0\n0    1    1\n1    0    0\n1    1    0\n\nName of Function: NOT Gate"
+    },
+    "Question K": {
+        "question": "Write a truth table for the function performed by the gate in the figure. The truth table should have three inputs, A, B, and C.",
+        "answer": "A | B | C | Output\n---|---|---|-------\n0 | 0 | 0 | 0\n0 | 0 | 1 | 1\n0 | 1 | 0 | 0\n0 | 1 | 1 | 0\n1 | 0 | 0 | 0  \n1 | 0 | 1 | 0\n1 | 1 | 0 | 1\n1 | 1 | 1 | 0"
+    },
+    "Question L": {
+        "question": "Sketch a transistor-level circuit for a CMOS four-input NOR gate.",
+        "answer": "The following is an example of a transistor-level circuit for a CMOS four-input NOR gate: \n\n[Insert Diagram]\n\nIn this circuit, the fourinputs (A-D) control the gates of transistors M1-M4, which connect to a pull-up network (PM1 and PM2). The output (Q) is connected to the common node of the pull-up network. When at least one of the four inputs (A-D) is high (1), transistors M1-M4 turn on, which sources current from PM1 and PM2, resulting in a low (0) output. When all inputs (A-D) are low (0), transistors M1-M4 are off, and the pull-up network pulls the output (Q) high (1)."
+    },
+    "Execution Time": "0:03:19.891064",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

@@ -1,0 +1,16 @@
+{
+    "Question A": {
+        "question": "Complete the truth table for the full adder circuit.",
+        "answer": "\\begin{array}{|c|c|c|c|c|} \n\\hline\nA & B & C_{in} & S & C_{out}\\\\ \\hline\n0 & 0 & 0 & 0 & 0 \\\\ \\hline\n0 & 0 & 1 & 1 & 0 \\\\ \\hline\n0 & 1 & 0 & 1 & 0 \\\\ \\hline\n0 & 1 & 1 & 0 & 1 \\\\ \\hline\n1 & 0 & 0 & 1 & 0 \\\\ \\hline\n1 & 0 & 1 & 0 & 1 \\\\ \\hline\n1 & 1 & 0 & 0 & 1 \\\\ \\hline\n1 & 1 & 1 & 1 & 1 \\\\ \\hline\n\\end{array}"
+    },
+    "Question B": {
+        "question": "Derive Boolean equations for Co and Sum (using whatever method you like). It is possible to complete the equations using only NAND and XOR logical gates (Hint: use some of what you already have from Sum for Co, and that Co is always asserted for AB.)",
+        "answer": "Co (A,B) = NAND (Sum (A,B), XOR (A, B))\n\nSum (A,B) = XOR (NAND (A, B), Co (A,B))"
+    },
+    "Question C": {
+        "question": "Draw the schematic of the full adder circuit according to the equations you have derived. Note that you sometimes use the output of one logical gate for BOTH expressions, to minimize the number of gates used.",
+        "answer": "The full adder circuit looks like this:\n\n- A and B inputs at the left\n- A and B inputs are connected to an AND gate\n- The output of the AND gate is connected to a XOR gate\n- The XOR gate has its output connected to both an AND gate, and an OR gate\n- The output of the AND gate is \"S\", and the output of the OR gate is \"C\""
+    },
+    "Execution Time": "0:00:18.862956",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

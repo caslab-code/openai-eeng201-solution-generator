@@ -1,0 +1,16 @@
+{
+    "Question A": {
+        "question": "Complete the truth table for the full adder circuit.",
+        "answer": "| A | B | Cin | S | Cout |\n|---|---|-----|---|------|\n| 0 | 0 | 0   | 0 | 0    |\n| 0 | 0 | 1   | 1 | 0    |\n| 0 | 1 | 0   | 1 | 0    |\n| 0 | 1 | 1   | 0 | 1    |\n| 1 | 0 | 0   | 1 | 0    |\n| 1 | 0 | 1   | 0 | 1    |\n| 1 | 1 | 0   | 0 | 1    |\n| 1 | 1 | 1   | 1 | 1    |"
+    },
+    "Question B": {
+        "question": "Derive Boolean equations for Co and Sum (using whatever method you like). It is possible to complete the equations using only NAND and XOR logical gates (Hint: use some of what you already have from Sum for Co, and that Co is always asserted for AB.)",
+        "answer": "Co (A,B) = NAND (NAND (A, B), Sum (A,B))\n\nSum (A,B) = XOR (A, B)"
+    },
+    "Question C": {
+        "question": "Draw the schematic of the full adder circuit according to the equations you have derived. Note that you sometimes use the output of one logical gate for BOTH expressions, to minimize the number of gates used.",
+        "answer": "<img src=\"Full Adder.jpg\" />"
+    },
+    "Execution Time": "0:00:15.421329",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

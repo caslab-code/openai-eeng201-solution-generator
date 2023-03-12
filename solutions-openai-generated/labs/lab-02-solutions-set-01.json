@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "Fill out the truth table, which describes the operation of a full adder. We use the inputs A, B, CI and the outputs are called S and CO.",
+        "answer": "A   | B   | CI  | S   | CO\n------------------------------------------\n0   | 0   | 0   | 0   | 0\n0   | 0   | 1   | 1   | 0\n0   | 1   | 0   | 1   | 0\n0   | 1   | 1   | 0   | 1\n1   | 0   | 0   | 1   | 0\n1   | 0   | 1   | 0   | 1\n1   | 1   | 0   | 0   | 1\n1   | 1   | 1   | 1   | 1"
+    },
+    "Question B": {
+        "question": "Derive the Boolean equations for both outputs of a full adder. Apply logic minimization techniques to come up with a simplified full adder circuit.",
+        "answer": "Full Adder Boolean Equations:\n\nOutput S = A \u2295 B \u2295 Cin\n\nOutput Cout = (A\u2022B) + Cin\u2022(A\u2295B)\n\nLogic Minimization:\n\nOutput S = A \u2295 B \u2295 Cin\n\nOutput Cout = A\u2022B + Cin\u2022(A\u2022B)\n\nSimplified Full Adder Circuit:\n\n|     |     |     | \n| --- | --- | --- |\n| A   |   B | Cin |\n|  X  |  X  |  X  | \n|     |     |     | \n|  |--|--|--|--| \n|  |  |Or|  |  | \n|  |In|01|Out| \n|  |--|--|--|--| \n|     |     |     |\n|     |     |     | \n|  |--|--|--|--| \n|  |  |And|  |  | \n|  |In|02|Out| \n|  |--|--|--|--|"
+    },
+    "Question C": {
+        "question": "Draw the schematic of the full adder circuit according to the equations you have derived.",
+        "answer": "![Full Adder Schematic](full_adder_schematic.png)"
+    },
+    "Question D": {
+        "question": "Generate full adder Verilog code for outputs co (carry out) and s (sum)",
+        "answer": "module full_adder( input a,input b,input ci, output co,output s); \n \n //assign the variables with their respective values \n assign s = a ^ b ^ ci;\n assign co = (a & b) | (ci & (a ^ b));\n \nendmodule"
+    },
+    "Execution Time": "0:00:28.109315",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

@@ -1,0 +1,44 @@
+{
+    "Question A": {
+        "question": "A diagram of a dual in-line package (DIP) module containing 4 NOR gates is shown in the figure, it is similar to modules available in lab 1 project. Describe how would you connect the pins of the module to realize the Boolean expression Y = AC\u2019 + B\u2019C\u2019. Do this by drawing the module and the connections (wires) of your solution. Since the module only has NOR gates, you need to convert the expression for Y into equivalent one using only NOR gates. Then, for each pin (1 to 14) of the module, you should show if it\u2019s connected to A, B, C, Y, Ground, VDD, or if the pin is connected to another pin of the module, or if the pin not connected. You can use any number of NOR gates, not all NOR gates of the module need to be used, if some NOR gates are unused label the pins as unconnected.",
+        "answer": "Y=AC\u2019+B\u2019C\u2019 = A\u2019B\u2019C\u2019 + ABC\u2019 \n \n \n \nPins: \n1: A\u2019\n2: B\u2019 \n3: C\u2019\n4: A\n5: Ground\n6: B\n7: C\n8: VDD \n9: Unconnected\n10: Unconnected\n11: A\u2019B\u2019C\u2019 (Y1)\n12: ABC\u2019 (Y2)\n13: Y1 OR Y2\n14: Ground"
+    },
+    "Question B": {
+        "question": "Draw a transistor level diagram of CMOS AND gate. Assume you only have two 1-bit inputs A and B; draw transistor diagrams of inverters if you need to generate A\u2019 or B\u2019.",
+        "answer": "![transistor_level_cmos_AND_gate](https://user-images.githubusercontent.com/58550017/85035604-9ee15700-b177-11ea-84f2-2b8e345aec63.jpg)"
+    },
+    "Question C, Part 1": {
+        "question": "Draw a truth table for the expression Y = AC\u2019D\u2019 + AB\u2019D + AB\u2019C + BCD + ACD.",
+        "answer": "Y | A | B | C | D\n--|---|---|---|---\n0 | 0 | 0 | 0 | 0\n0 | 0 | 0 | 0 | 1\n1 | 0 | 0 | 1 | 0\n0 | 0 | 0 | 1 | 1\n0 | 0 | 1 | 0 | 0\n1 | 0 | 1 | 0 | 1\n1 | 0 | 1 | 1 | 0\n0 | 0 | 1 | 1 | 1\n1 | 1 | 0 | 0 | 0\n0 | 1 | 0 | 0 | 1\n1 | 1 | 0 | 1 | 0\n0 | 1 | 0 | 1 | 1\n0 | 1 | 1 | 0 | 0\n1 | 1 | 1 | 0 | 1\n0 | 1 | 1 | 1 | 0\n1 | 1 | 1 | 1 | 1"
+    },
+    "Question C, Part 2": {
+        "question": "Draw a K-Map and find minimal sum-of-products expression for Y = AC\u2019D\u2019 + AB\u2019D + AB\u2019C + BCD + ACD.",
+        "answer": "Y = AC'D' + AB'D + AB'C + BCD + ACD\n\nK-Map:\n\n![K Map](k-map.png)\n\nMinimal sum-of-products expression for Y: \nY = BCD + AB'D + AC'D'"
+    },
+    "Question D": {
+        "question": "The figure shows the truth table for the 7-segment decoder. Write Verilog code to realize the 7-segment decoder. The inputs are D, C, B, A, and outputs are a, b, c, d, e, f, g. For any inputs not shown in the table, the output should be 0 for all output signals. Remember Verilog is case sensitive. You are encouraged to use the case statement. Also, you may want to use {} to concatenate signals, as well as you may want to define new internal wires used for the concatenated inputs and outputs.",
+        "answer": "`\nmodule SevenSegmentDecoder(input D, C, B, A,\n         output a, b, c, d, e, f, g);\n  reg a, b, c, d, e, f, g;\n    //Case statement used to decode input bits\n    always@(*) begin\n      case ( {D,C,B,A} ) \n        4'b0000: {a,b,c,d,e,f,g} = 7'b1000000;\n        4'b0001: {a,b,c,d,e,f,g} = 7'b1111001;\n        4'b0010: {a,b,c,d,e,f,g} = 7'b0100100;\n        4'b0011: {a,b,c,d,e,f,g} = 7'b0110000;\n        4'b0100: {a,b,c,d,e,f,g} = 7'b0011001;\n        4'b0101: {a,b,c,d,e,f,g} = 7'b0010010;\n        4'b0110: {a,b,c,d,e,f,g} = 7'b0000010;\n        4'b0111: {a,b,c,d,e,f,g} = 7'b1111000;\n        4'b1000: {a,b,c,d,e,f,g} = 7'b0000000;\n        4'b1001: {a,b,c,d,e,f,g} = 7'b0010000;\n        4'b1010: {a,b,c,d,e,f,g} = 7'b0001000;\n        4'b1011: {a,b,c,d,e,f,g} = 7'b0000011;\n        4'b1100: {a,b,c,d,e,f,g} = 7'b1000110;\n        4'b1101: {a,b,c,d,e,f,g} = 7'b0100001;\n        4'b1110: {a,b,c,d,e,f,g} = 7'b0000110;\n        4'b1111: {a,b,c,d,e,f,g} = 7'b0001110;\n        default: {a,b,c,d,e,f,g} = 7'b0000000;\n      endcase\n    end\nendmodule \n`"
+    },
+    "Question E, Part 1": {
+        "question": "Recall that a Fibonacci Sequence is: 1, 1, 2, 3, 5, ... I.e. two prior numbers are added to get the next number. Draw a state diagram for a Moore finite state machine which outputs only the first 3 Fibonacci numbers. The finite state machine should start in an idle state where it outputs 0. Assume that there is a start signal named S that is 1 when the output sequence should be started. When S is 1, finite state machine should exit the idle state and output one Fibonacci number per cycle (i.e. output 1, then next 1, then 2). When last number is output it should go back to the idle state. S is a don\u2019t care value in any state other than the idle state. The state machine should output 0 in the initial idle state, and any time it goes back to the idle state. If machine enters idle state, it should stay there until S becomes 1 again.",
+        "answer": "State diagram:\n\nIDLE  --S-->  S1  --1-->  S2 --2--> S3 --3-->  IDLE"
+    },
+    "Question E, Part 2": {
+        "question": "Select binary encoding for the states of a Moore finite state machine which outputs only the first 3 Fibonacci numbers. Draw the next-state and output tables based on your encoding; note the output is the Fibonacci number, so the output needs to be more than one bit.",
+        "answer": "Binary Encoding: \nS = 0\nA = 00\nB = 01\nC = 10\n\nNext-State Table:\n\nS | 00 | 01 | 10  \n--|----|----|----\n0 | 00 | 01 | A0\nA | 10 | 01 | A1\nB | A0 | B0 | B1\nC | B1 | B0 | C0\n\nOutput Table:\n\n00 | 0\n01 | 1\n10 | 1\nA0 | 2\nA1 | 3\nB0 | 5\nB1 | 8\nC0 | 13"
+    },
+    "Question E, Part 3": {
+        "question": "Use K-Maps to find the minimal sum-of-products form equations for the next-state logic and the output logic of a Moore finite state machine which outputs only the first 3 Fibonacci numbers.",
+        "answer": "Next State Logic:\n\nF2' F1' S1' + F2 F1' S0' + F2' F1 S1' + F2 F1 S0'\n\nOutput Logic: \nF1 + F2' S1 + F2 S0"
+    },
+    "Question E, Part 4": {
+        "question": "Determine the propagation delays and contamination delays for the next state logic and output logic of a Moore finite state machine which outputs only the first 3 Fibonacci numbers. Use the gate delays table shown in the figure.",
+        "answer": "Propagation Delay (ns):\n\nNext State Logic: 8\nContamination Delay (ns):\n\nNext State Logic: 2\nOutput Logic: N/A"
+    },
+    "Question E, Part 5": {
+        "question": "Assume each flip-flop has a setup time of 30 ps, a hold time of 10 ps, a clock-to-Q maximum delay of 35 ps, and a clock-to-Q minimum delay of 25 ps. What is the maximum operating clock frequency of the Moore finite state machine which outputs only the first 3 Fibonacci numbers equivalently what is the minimum clock period?",
+        "answer": "The minimum clock period is the total setup and hold times plus the clock-to-Q delays, or 75 ps. Therefore, the maximum operating clock frequency is 13.3 MHz."
+    },
+    "Execution Time": "0:00:50.055235",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

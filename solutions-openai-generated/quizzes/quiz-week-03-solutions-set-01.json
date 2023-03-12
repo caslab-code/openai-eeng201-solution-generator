@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "What is the difference between nMOS and pMOS transistors?",
+        "answer": "nMOS (Negative Channel Metal Oxide Semiconductor) transistors are based on a P-type substrate with N-type source and drain regions and use electrons in the channel to conduct current when turned on. pMOS (Positive Channel Metal Oxide Semiconductor) transistors are based on an N-type substrate with P-type source and drain regions, and use holes in the channel to conduct current when turned on."
+    },
+    "Question B": {
+        "question": "How many nMOS and pMOST transistors are used to build a NOT gate? How are they connected?",
+        "answer": "A NOT gate typically uses one pMOS and one nMOS transistor. They are connected in series with the output connected to the source of the nMOS and the source of the pMOS connected to ground. The input is connected to the gate of the pMOS, and the gate of the nMOS is connected to the output."
+    },
+    "Question C": {
+        "question": "What is difference between dynamic power and static power?",
+        "answer": "Static power is the power consumed by circuits even when there are no transitions in the circuit's state and no active computations. It is the power that is being consumed when the chip is in an idle state. Dynamic power is the power consumed by circuits while operation and depends on the amount and speed of active computations or transitions. It is usually much higher than static power."
+    },
+    "Question D": {
+        "question": "What is the difference between a product term and a minterm?",
+        "answer": "A product term is a logic expression that is formed by multiplying two or more variables. For example, the product term for two variables A and B would be A*B. A minterm is a product term with all its variables in the most simplified form. For example, the minterm for two variables A and B would be 1 if both A and B are 1 and would be 0 in all other conditions."
+    },
+    "Execution Time": "0:00:22.055977",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

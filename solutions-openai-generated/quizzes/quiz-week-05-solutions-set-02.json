@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "For a 4-variable K-Map, why are the rows and columns arranged in the order: 00, 01, 11, 10?",
+        "answer": "The binary numbers used to label the rows and columns of the 4-variable K-Map are based on the ordering of combinations of the variables. Rows and columns are arranged in the order 00, 01, 11, 10 so that the higher order combinations of variables are on the right and bottom level of the map, which helps to simplify expressions for identifying the lower order combinations."
+    },
+    "Question B": {
+        "question": "How do you assign values to don\u2019t care X in K-Maps when doing simplification?",
+        "answer": "Don\u2019t care values are represented by X-es in the K-Maps and the value of these X-es can be easily assigned by using either a 0 or a 1. The value assigned to each of these X can be determined by several criteria. For example, when simplifying SOP forms, one possible rule would be to assign 0 to any X found in the largest product term. Similarly, if the goal is to produce a POS form, then one possible rule could be to assign a 1 to any X found in the smallest product term. However, the rule used to assign 0s and 1s to the X-es should be based on the specific situation and context in order to achieve the greatest simplification."
+    },
+    "Question C": {
+        "question": "Can you circle a rectangle of 2x3 cells in a K-Map, why or why not?",
+        "answer": "No, you cannot circle a rectangle of 2x3 cells in a K-Map because a K-Map consists of only four cells and a rectangle of 2x3 consists of six cells."
+    },
+    "Question D": {
+        "question": "What does 2x4 decoder do?",
+        "answer": "A 2x4 decoder is a digital circuit that takes two binary inputs and converts them into four outputs. It is commonly used in computer memory systems, switch matrices, and other multiplexing and demultiplexing applications. A 2x4 decoder can interpret two bits of data (a two-digit binary number) and output one of four digitally coded outputs. The four outputs each represent one of the four possible combinations of two binary inputs."
+    },
+    "Question E": {
+        "question": "What is seven-segment display?",
+        "answer": "A seven-segment display (SSD) is a type of display used for displaying numerical information, made up of seven individual elements (segments) that can be used to create basic numerals. Each of the seven segments has its own LED light that can be individually turned on or off. By turning different combinations of LEDs on, every number from 0 to 9 can be created. The seven segments can also be used to display some letters and other characters."
+    },
+    "Execution Time": "0:00:25.616484",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

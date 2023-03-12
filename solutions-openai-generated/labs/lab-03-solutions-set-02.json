@@ -1,0 +1,12 @@
+{
+    "Question A": {
+        "question": "Fill in the truth table that converts a binary number to a 7-segment encoding.  Note that a segment should glow when the corresponding output is logic-0.",
+        "answer": "| Binary Input | A | B | C | D | E | F | G |\n| ------------ | - | - | - | - | - | - | - |\n| 0000         | 0 | 0 | 0 | 0 | 0 | 0 | 1 | \n| 0001         | 1 | 0 | 0 | 1 | 1 | 1 | 1 |\n| 0010         | 0 | 0 | 1 | 0 | 0 | 1 | 0 |\n| 0011         | 0 | 0 | 1 | 1 | 1 | 1 | 0 |\n| 0100         | 0 | 1 | 0 | 0 | 1 | 0 | 0 |\n| 0101         | 0 | 1 | 0 | 1 | 1 | 0 | 0 |\n| 0110         | 0 | 1 | 1 | 0 | 1 | 0 | 0 |\n| 0111         | 0 | 1 | 1 | 1 | 1 | 0 | 0 |\n| 1000         | 1 | 0 | 0 | 0 | 0 | 1 | 0 |\n| 1001         | 1 | 0 | 0 | 1 | 0 | 1 | 0 | \n| 1010         | 1 | 0 | 1 | 0 | 0 | 1 | 0 |\n| 1011         | 1 | 0 | 1 | 1 | 0 | 1 | 0 |\n| 1100         | 1 | 1 | 0 | 0 | 0 | 1 | 0 |\n| 1101         | 1 | 1 | 0 | 1 | 0 | 1 | 0 |\n| 1110         | 1 | 1 | 1 | 0 | 0 | 1 | 0 |\n| 1111         | 1 | 1 | 1 | 1 | 0 | 1 | 0 |"
+    },
+    "Question B": {
+        "question": "Write Verilog code for 7-segment decoder.",
+        "answer": "/* Verilog code for 7-segment decoder */\n\nwire [6:0] seg; // 7-segment display output \n\nmodule seg_decode(input [3:0] a, output [6:0] seg);\n\n// declare a 4-variable array with all components being wire\nwire [3:0] array[3:0];\n\n// assign input signals to each element of the array\nassign array[3] = a[3];\nassign array[2] = a[2];\nassign array[1] = a[1];\nassign array[0] = a[0];\n\nif (array == 4'b0000) begin\n    seg = 7'b1000000; // Display 0\nend \n\nelse if (array == 4'b0001) begin\n    seg = 7'b1111001; // Display 1\nend\n\nelse if (array == 4'b0010) begin\n    seg = 7'b0100100; // Display 2\nend\n\nelse if (array == 4'b0011) begin\n    seg = 7'b0110000; // Display 3\nend\n\nelse if (array == 4'b0100) begin\n    seg = 7'b0011001; // Display 4\nend\n\nelse if (array == 4'b0101) begin\n    seg = 7'b0010010; // Display 5\nend\n\nelse if (array == 4'b0110) begin\n    seg = 7'b0000010; // Display 6\nend\n\nelse if (array == 4'b0111) begin\n    seg = 7'b1111000; // Display 7\nend\n\nelse if (array == 4'b1000) begin\n    seg = 7'b0000000; // Display 8\nend\n\nelse if (array == 4'b1001) begin\n    seg = 7'b0010000; // Display 9\nend\n\nendmodule"
+    },
+    "Execution Time": "0:00:27.874435",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

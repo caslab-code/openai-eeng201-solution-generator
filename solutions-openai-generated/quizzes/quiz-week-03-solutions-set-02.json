@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "What is the difference between nMOS and pMOS transistors?",
+        "answer": "NMOS transistors are composed of a metal-oxide semiconductor structure, containing a source, a drain, and a gate. They use positive voltages to control current flow from the source to the drain. On the other hand, PMOS transistors are composed of an opposite structure, where the gate and source are reversely-biased (with negative voltages). In this case, the current flows from the drain to the source when a positive voltage is applied to the gate."
+    },
+    "Question B": {
+        "question": "How many nMOS and pMOST transistors are used to build a NOT gate? How are they connected?",
+        "answer": "A NOT gate is typically built using one nMOS and one pMOS transistor. The nMOS transistor is typically connected to VDD and the input signal and the output signal is connected to the source. The pMOS transistor is typically connected to Ground and the input signal and the output signal is connected to the drain."
+    },
+    "Question C": {
+        "question": "What is difference between dynamic power and static power?",
+        "answer": "Dynamic power is the power dissipated by a device due to changes in applied signals, while static power is the minimum power dissipated by a device even when idle. Dynamic power is typically dissipated as leakage power and as a result of energy required for switching circuits. Static power is typically dissipated due to leakage current of circuits that do not switch."
+    },
+    "Question D": {
+        "question": "What is the difference between a product term and a minterm?",
+        "answer": "A product term is a logical combination of multiple variables, each of which can be either true (1) or false (0). A minterm is the same as a product term except that it is a combination of variables where each can be either true (1) or false (0). The key difference between a product term and minterm is that a product term can contain variables that can be true or false, while a minterm must contain only variables that can be true or false."
+    },
+    "Execution Time": "0:00:22.176943",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

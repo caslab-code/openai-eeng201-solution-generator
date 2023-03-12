@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "How many NOR gates are used in SR-latch?",
+        "answer": "Two NOR gates are used in an SR-latch."
+    },
+    "Question B": {
+        "question": "What is difference between SR-latch and D-latch?",
+        "answer": "The main difference between an SR-latch and a D-latch is the reset signal. An SR-latch requires both a set and a reset signal to change its state, while a D-latch requires only a data signal. Additionally, an SR-latch is more prone to race conditions than a D-latch. Another difference is that SR-latches require more time to propagate their output than D-latches. SR-latches must propagate their state across their entire device, while D-latches require only a simple edge detection. Furthermore, SR-latches have both a large and small fan-in, while D-latches can only have a single fan-in."
+    },
+    "Question C": {
+        "question": "What is difference between a latch and flip-flop? Hint: consider how do they operate with respect to the clock input.",
+        "answer": "A latch is an asynchronous device that is not clocked, meaning it responds to changes instantly, while a flip-flop is a clocked device that only changes when triggered by a clock signal. Latches are level triggered whereas flip-flops are edge triggered, meaning that a flip-flop will only change state when the clock signal goes from high to low, or low to high. The output of a latch is also dependent on its inputs, whereas a flip-flop\u2019s output is only dependent on the clock. Furthermore, latches are more susceptible errors due to their asynchronous nature."
+    },
+    "Question D": {
+        "question": "What is difference between combinatorial logic, sequential logic, and synchronous sequential logic?",
+        "answer": "Combinatorial logic: Combinatorial logic is a type of digital logic which uses combinations of logic gates to perform logic functions. It is commonly used in logic functions such as adders, multipliers and decoders. Combinatorial logic does not use the concept of storage or memory and does not have any inherent delays built into them.\n\nSequential Logic: Sequential logic is a type of digital logic which uses both combinational and memory devices to perform logic functions. It is commonly used in applications such as clocks, registers, counters and shift registers. Sequential logic has both combinational logic and the concept of storage built into it.\n\nSynchronous Sequential Logic: Synchronous sequential logic is a type of digital logic which uses a set of combinational logic elements and a set of sequential elements connected together to perform logic functions. It is commonly used in applications such as counters, registers and control systems. This type of logic has an inherent clock built into it, which is used to synchronize all the elements of the circuit. The clock enables efficient and precise communication between the elements in the circuit."
+    },
+    "Question E": {
+        "question": "What does state register of state machine do?",
+        "answer": "State registers of state machines are used to store the present state of the machine. They keep track of which states the machine is in, what actions the machine has taken, and what the current input and output values are. This allows the machine to maintain its current state and respond accurately to changes in its environment."
+    },
+    "Execution Time": "0:00:20.478162",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

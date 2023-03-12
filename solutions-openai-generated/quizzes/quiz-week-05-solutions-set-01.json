@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "For a 4-variable K-Map, why are the rows and columns arranged in the order: 00, 01, 11, 10?",
+        "answer": "This order is based on the binary representation of each of the 4 combinations. For a K-Map with 4 variables, the binary combination of the variables would look something like this: (00, 01, 10, 11). The binary order (from left to right and top to bottom) ensures that the combinations can be easily read off the map."
+    },
+    "Question B": {
+        "question": "How do you assign values to don\u2019t care X in K-Maps when doing simplification?",
+        "answer": "When using K-maps for logic simplification, don't care values (usually represented by an 'X' in the K-map) can be assigned either a 0 or 1 value (or left as a don't care). It usually doesn't matter which value the don't care is assigned because the resulting equations will be the same. So in a situation when it is necessary to assign a 0 or 1 to a don't care value, it can be done at random."
+    },
+    "Question C": {
+        "question": "Can you circle a rectangle of 2x3 cells in a K-Map, why or why not?",
+        "answer": "No, it is not possible to circle a rectangle of 2x3 cells in a K-Map because there are generally only four cells to be included in each K-Map. Furthermore, rectangular or other shapes are not able to be formed inside of these four cells."
+    },
+    "Question D": {
+        "question": "What does 2x4 decoder do?",
+        "answer": "A 2x4 decoder is a digital logic circuit that takes two binary inputs and produces four output signals. It is used to convert a binary coded information into a form that can be used to drive various types of output devices such as light bulbs, motors, relays, etc. A 2x4 decoder is used in applications such as controlling electric door locks, automated teller machines, and encoding digital images."
+    },
+    "Question E": {
+        "question": "What is seven-segment display?",
+        "answer": "A seven-segment display is an electronic device consisting of seven light-emitting diodes (LEDs) or LCD (liquid crystal display) elements, arranged in a rectangular shape to display numerical or alphabetical information. These displays are widely used in digital clocks, calculators, and other electronic devices."
+    },
+    "Execution Time": "0:00:21.138728",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

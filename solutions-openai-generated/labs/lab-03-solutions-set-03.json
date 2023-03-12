@@ -1,0 +1,12 @@
+{
+    "Question A": {
+        "question": "Fill in the truth table that converts a binary number to a 7-segment encoding.  Note that a segment should glow when the corresponding output is logic-0.",
+        "answer": "| Binary Input | A | B | C | D | E | F | G | \n|:-----------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|  \n|      0      | 0 | 0 | 0 | 0 | 0 | 0 | 1 | \n|      1\t    | 1 | 0 | 0 | 1 | 1 | 1 | 1 |\n|      2      | 0 | 0 | 1 | 0 | 0 | 1 | 0 |\n|      3      | 0 | 0 | 0 | 0 | 1 | 1 | 0 |\n|      4      | 1 | 0 | 0 | 1 | 1 | 0 | 0 |\n|      5      | 0 | 1 | 0 | 0 | 1 | 0 | 0 |\n|      6      | 0 | 1 | 0 | 0 | 0 | 0 | 0 |\n|      7      | 0 | 0 | 0 | 1 | 1 | 1 | 1 |\n|      8      | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n|      9      | 0 | 0 | 0 | 0 | 1 | 0 | 0 |"
+    },
+    "Question B": {
+        "question": "Write Verilog code for 7-segment decoder.",
+        "answer": "module seven_segment_decoder(input [3:0] input, output reg [6:0] seg);\n\nreg [6:0] code;\n\nalways @* begin\n      case(input)\n        4'b0000: code = 7'b1000000;\n        4'b0001: code = 7'b1111001;\n        4'b0010: code = 7'b0100100;\n        4'b0011: code = 7'b0110000;\n        4'b0100: code = 7'b0011001;\n        4'b0101: code = 7'b0010010;\n        4'b0110: code = 7'b0000010;\n        4'b0111: code = 7'b1111000;\n        4'b1000: code = 7'b0000000;\n        4'b1001: code = 7'b0010000;\n        4'b1010: code = 7'b0001000;\n        4'b1011: code = 7'b0000011;\n        4'b1100: code = 7'b1000110;\n        4'b1101: code = 7'b0100001;\n        4'b1110: code = 7'b0000110;\n        4'b1111: code = 7'b0001110;\n        default: code = 7'b0000000;\n      endcase\n      seg = code;\nend\n\nendmodule"
+    },
+    "Execution Time": "0:00:25.476034",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

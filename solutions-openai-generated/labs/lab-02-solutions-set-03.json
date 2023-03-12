@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "Fill out the truth table, which describes the operation of a full adder. We use the inputs A, B, CI and the outputs are called S and CO.",
+        "answer": "| A | B | CI | S | CO |\n|---|---|----|---|----|\n| 0 | 0 | 0  | 0 | 0  |\n| 0 | 0 | 1  | 1 | 0  |\n| 0 | 1 | 0  | 1 | 0  |\n| 0 | 1 | 1  | 0 | 1  |\n| 1 | 0 | 0  | 1 | 0  |\n| 1 | 0 | 1  | 0 | 1  |\n| 1 | 1 | 0  | 0 | 1  |\n| 1 | 1 | 1  | 1 | 1  |"
+    },
+    "Question B": {
+        "question": "Derive the Boolean equations for both outputs of a full adder. Apply logic minimization techniques to come up with a simplified full adder circuit.",
+        "answer": "Boolean equations:\n\nOutput Sum (S) = A\u2295B\u2295Cin\n\nOutput Carry (Cout) = AB + ACin + BCin\n\nSimplified full adder circuit:\n\nS =A\u2295B\u2295Cin\n\nCout = A+B(Cin)"
+    },
+    "Question C": {
+        "question": "Draw the schematic of the full adder circuit according to the equations you have derived.",
+        "answer": "![Full Adder Circuit](./full_adder.jpg)"
+    },
+    "Question D": {
+        "question": "Generate full adder Verilog code for outputs co (carry out) and s (sum)",
+        "answer": "module full_adder(a, b, c_in, s, c_out);\n\n   input a;\n   input b;\n   input c_in;\n\n   output s;\n   output c_out;\n\n   wire t1, t2, t3;\n\n   xor (t1, a, b);        // t1 = a xor b\n   and (t2, a, b);        // t2 = a and b\n   xor (s, t1, c_in);     // s = t1 xor c_in\n   and (t3, t1, c_in);    // t3 = t1 and c_in\n   or  (c_out, t2, t3);   // c_out = t2 or t3\n\nendmodule"
+    },
+    "Execution Time": "0:00:32.162663",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "How many NOR gates are used in SR-latch?",
+        "answer": "Two NOR gates are used in an SR-latch."
+    },
+    "Question B": {
+        "question": "What is difference between SR-latch and D-latch?",
+        "answer": "The primary difference between an SR-latch and a D-latch is that an SR-latch is level-triggered whereas a D-latch is edge-triggered. Additionally, an SR-Latch has two inputs (S and R) whereas a D-Latch has a data (D) input and an enable (E) input. Finally, the outputs of an SR-latch (Q and Q') are not complements to each other while the outputs of a D-latch (Q and Q') are complements."
+    },
+    "Question C": {
+        "question": "What is difference between a latch and flip-flop? Hint: consider how do they operate with respect to the clock input.",
+        "answer": "A latch is an asynchronous memory device that is triggered by a signal, such as an edge from a voltage source, to store a bit of information with little to no clock input. Latches are level-triggered, meaning the data will remain stored until the triggering signal is applied again.\n\nA flip-flop is a synchronous memory device that is triggered by a signal from a clock input. Flip-flops are edge-triggered, meaning the data is stored only for a period of time determined by the clock signal. Flip-flops also typically have more logic elements than latches, as well as additional features such as clocked reset and set."
+    },
+    "Question D": {
+        "question": "What is difference between combinatorial logic, sequential logic, and synchronous sequential logic?",
+        "answer": "Combinatorial logic is logic that changes its output immediately in response to a change in input. It does not require internal memory or registers.\n\nSequential logic is logic that uses past values in addition to inputs to determine its outputs. This requires internal memory and registers, and its outputs may change with a delay.\n\nSynchronous sequential logic is logic that processes inputs and changes states within predefined clock cycles. It requires internal memory and registers, and its output changes at the end of each clock cycle."
+    },
+    "Question E": {
+        "question": "What does state register of state machine do?",
+        "answer": "The state register of a state machine is used to store the current state of the system. It can be used to guide the interactions between the elements within the system, by informing different components of the overall state at any given moment. This allows for the efficient and accurate coordination between the components of the system, achieving the desired system behavior."
+    },
+    "Execution Time": "0:00:15.742561",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

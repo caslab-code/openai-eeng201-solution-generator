@@ -1,0 +1,20 @@
+{
+    "Question A": {
+        "question": "List the names of one-input and two-input logic gates, excluding XOR and XNOR.",
+        "answer": "One-Input Logic Gates: \n\nNOT (or Inverter) \n\nTwo-Input Logic Gates: \nAND \nOR \nNAND \nNOR"
+    },
+    "Question B": {
+        "question": "What is the difference between OR and XOR gate?",
+        "answer": "The OR gate is a logic gate that outputs a \u201c1\u201d or \u201chigh\u201d when either or both of its inputs are \u201c1\u201d or \u201chigh\u201d. The OR gate will output a \u201c0\u201d or \u201clow\u201d when both of its inputs are \u201c0\u201d or \u201clow\u201d.\n\nThe XOR gate is a logic gate that outputs a \u201c1\u201d or \u201chigh\u201d when one of its inputs is \u201c1\u201d or \u201chigh\u201d and the other input is \u201c0\u201d or \u201clow\u201d. The XOR gate will output a \u201c0\u201d or \u201clow\u201d when both of its inputs are either \u201c1\u201d or \u201chigh\u201d or when both of its inputs are \u201c0\u201d or \u201clow\u201d."
+    },
+    "Question C": {
+        "question": "Can we have more than two-input gates?",
+        "answer": "Yes, there are multiple-input logic gates available, such as three-input AND, four-input AND and XOR gates, and even more complex multi-input logic gates."
+    },
+    "Question D": {
+        "question": "What is the purpose of \"bubble pushing\"?",
+        "answer": "Bubble pushing is a strategy used in computer science to make algorithms or programs more efficient. It is a debugging technique that involves pushing errors or bugs to the \u201cedge\u201d of a program by making small changes and running the program again. By moving bug to where they are easier to identify and fix, this strategy helps to speed up the process of debugging algorithms or programs."
+    },
+    "Execution Time": "0:00:21.689498",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

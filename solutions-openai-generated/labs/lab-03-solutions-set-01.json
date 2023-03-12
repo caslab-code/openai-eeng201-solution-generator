@@ -1,0 +1,12 @@
+{
+    "Question A": {
+        "question": "Fill in the truth table that converts a binary number to a 7-segment encoding.  Note that a segment should glow when the corresponding output is logic-0.",
+        "answer": "| Binary | A | B | C | D | E | F | G |\n|-------|---|---|---|---|---|---|---|\n| 0     | 0 | 0 | 0 | 0 | 0 | 0 | 1 |\n| 1     | 1 | 0 | 0 | 1 | 1 | 1 | 1 |\n| 2     | 0 | 0 | 1 | 0 | 0 | 1 | 0 |\n| 3     | 0 | 0 | 0 | 0 | 1 | 1 | 0 |\n| 4     | 1 | 0 | 0 | 1 | 1 | 0 | 0 |\n| 5     | 0 | 1 | 0 | 0 | 1 | 0 | 0 |\n| 6     | 0 | 1 | 0 | 0 | 0 | 0 | 0 |\n| 7     | 0 | 0 | 0 | 1 | 1 | 1 | 1 |\n| 8     | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| 9     | 0 | 0 | 0 | 0 | 1 | 0 | 0 |"
+    },
+    "Question B": {
+        "question": "Write Verilog code for 7-segment decoder.",
+        "answer": "module seven_segment_decoder(input[3:0] a, output[7:0] b, o_dp);\nassign b[0] = ~a[3]&a[2]&a[1]&~a[0];\nassign b[1] = ~a[3]&~a[2]&a[1]&~a[0];\nassign b[2] = a[3]&~a[2]&~a[1]&~a[0];\nassign b[3] = ~a[3]&~a[2]&~a[1]&a[0];\nassign b[4] = a[3]&a[2]&~a[1]&~a[0];\nassign b[5] = a[3]&~a[2]&a[1]&~a[0];\nassign b[6] = a[3]&~a[2]&~a[1]&a[0];\nassign b[7] = a[3]&a[2]&a[1]&a[0];\nassign o_dp = ~a[3];\n\nendmodule"
+    },
+    "Execution Time": "0:00:23.443352",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}

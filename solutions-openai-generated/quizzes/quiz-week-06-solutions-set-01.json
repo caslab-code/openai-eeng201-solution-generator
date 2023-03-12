@@ -1,0 +1,24 @@
+{
+    "Question A": {
+        "question": "How many NOR gates are used in SR-latch?",
+        "answer": "Two NOR gates are used in a SR-latch."
+    },
+    "Question B": {
+        "question": "What is difference between SR-latch and D-latch?",
+        "answer": "SR-latch stands for Set-Reset latch and is a type of bistable latch. It has two inputs - Set (S) and Reset (R). It has two outputs - Q (for Set) and Q' (for Reset). It can be activated by either of the two inputs. In SR-latch, when both S and R are high it leads to undefined state.\n\nD-latch stands for Data latch. It has two inputs - Data (D) and Enable (E). It has two outputs - Q and Q'. In D-latch, when both D and E are high, the output Q is set to the value of Data. When Enable is low, Data is ignored and Q value is stored. In D-latch, there is no undefined state."
+    },
+    "Question C": {
+        "question": "What is difference between a latch and flip-flop? Hint: consider how do they operate with respect to the clock input.",
+        "answer": "A latch is a type of sequential circuit that is level-sensitive and can hold data as input either until a set or reset signal is applied, regardless of the state of the clock. By contrast, a flip-flop is edge-sensitive and responds only to the transition from low to high or from high to low at the clock input. This means the output of a flip-flop changes only at the edges of the clock, whereas the output of a latch does not have to adhere to a clock signal."
+    },
+    "Question D": {
+        "question": "What is difference between combinatorial logic, sequential logic, and synchronous sequential logic?",
+        "answer": "Combinatorial logic is a type of digital circuit with only combinatorial elements such as logic gates, multiplexers, and adders. It produces logic states, or outputs, based solely on the logic states of its inputs and the logic gates that it contains.\n\nSequential logic is a type of digital circuit with both synchronous and asynchronous elements, such as latches and flip-flops. It produces logic states, or outputs, which are dependent on both the logic states of its inputs and the states of its internal storage elements, such as latches and flip-flops.\n\nSynchronous sequential logic is a type of sequential logic that is based on the concept of synchronous elements, or circuits whose inputs and outputs can change only at predetermined intervals or \u201cclock edges\u201d. This type of sequence logic circuit is used to produce complex sequences of outputs based on the current state of the circuit and the input conditions read at each clock edge."
+    },
+    "Question E": {
+        "question": "What does state register of state machine do?",
+        "answer": "A state register of a state machine is used to store the current and past states of a system. This data can then be used to determine what actions should be taken next. For example, if a state machine is controlling an automated manufacturing process, the register could be used to determine what steps have already been taken and if any errors have occurred."
+    },
+    "Execution Time": "0:00:19.804076",
+    "OpenAI Parameters": "Model: text-davinci-003, Max. Tokens: 1024, Temperature: 1, N: 1"
+}
