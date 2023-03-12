@@ -1,0 +1,146 @@
+{
+  "Question A" : {
+    "text" : "Determine the propagation delay and contamination delay of the circuit shown in the figure. The gate delays are given in the table in the figure as well.",
+    "figure" : "",
+    "reference" : "Exercise 2.44 from the Textbook."
+  },
+
+  "Question B" : {
+    "text" : "Sketch a schematic for a fast 3:8 decoder. Suppose gate delays are given in table 1 provided in the figure (and only use the gates in the table). Design your decoder to have the shortest possible critical path, and indicate what that path is. What are its propagation delay and contamination delay?",
+    "figure" : "",
+    "reference" : "Exercise 2.45 from the Textbook."
+  },
+
+  "Question C" : {
+    "text" : "Redesign the circuit from Exercise 2.35 to be as fast as possible. Use only the gates given in the table in the figure. Sketch the new circuit and indicate the critical path. What are its propagation delay and contamination delay?",
+    "figure" : "",
+    "reference" : "Exercise 2.46 from the Textbook."
+  },
+
+  "Question D" : {
+    "text" : "Given the input waveforms shown in the figure, sketch the output, Q, of an SR latch.",
+    "figure" : "",
+    "reference" : "Exercise 3.1 from the Textbook."
+  },
+
+  "Question E" : {
+    "text" : "Is the circuit shown in the figure combinational logic or sequential logic? Explain in a simple fashion what the relationship is between the inputs and outputs. What would you call this circuit?",
+    "figure" : "",
+    "reference" : "Exercise 3.7 from the Textbook."
+  },
+
+  "Question F" : {
+    "text" : "The toggle (T) flip-flop has one input, CLK, and one output, Q. On each rising edge of CLK, Q toggles to the complement of its previous value. Draw a schematic for a T flip-flop using a D flip-flop and an inverter.",
+    "figure" : "",
+    "reference" : "Exercise 3.9 from the Textbook."
+  },
+
+  "Question G, Part A" : {
+    "text" : "A JK flip-flop receives a clock and two inputs, J and K. On the rising edge of the clock, it updates the output, Q. If J and K are both 0, Q retains its old value. If only J is 1, Q becomes 1. If only K is 1, Q becomes 0. If both J and K are 1, Q becomes the opposite of its present state. Construct a JK flip-flop using a D flip-flop and some combinational logic.",
+    "figure" : "",
+    "reference" : "Exercise 3.10 from the Textbook."
+  },
+
+  "Question G, Part B" : {
+    "text" : "A JK flip-flop receives a clock and two inputs, J and K. On the rising edge of the clock, it updates the output, Q. If J and K are both 0, Q retains its old value. If only J is 1, Q becomes 1. If only K is 1, Q becomes 0. If both J and K are 1, Q becomes the opposite of its present state. Construct a D flip-flop using a JK flip-flop and some combinational logic.",
+    "figure" : "",
+    "reference" : "Exercise 3.10 from the Textbook."
+  },
+
+  "Question G, Part C" : {
+    "text" : "A JK flip-flop receives a clock and two inputs, J and K. On the rising edge of the clock, it updates the output, Q. If J and K are both 0, Q retains its old value. If only J is 1, Q becomes 1. If only K is 1, Q becomes 0. If both J and K are 1, Q becomes the opposite of its present state. Construct a T flip-flop using a JK flip-flop.",
+    "figure" : "",
+    "reference" : "Exercise 3.10 from the Textbook."
+  },
+
+  "Question H" : {
+    "text" : "Design a synchronously settable D flip-flop using logic gates.",
+    "figure" : "",
+    "reference" : "Exercise 3.14 from the Textbook."
+  },
+
+  "Question I" : {
+    "text" : "Which of the circuits in the figure are synchronous sequential circuits? Explain.",
+    "figure" : "",
+    "reference" : "Exercise 3.18 from the Textbook."
+  },
+
+  "Question J" : {
+    "text" : "Describe in words what the state machine in the figure does. Using binary state encodings, complete a state transition table and output table for the FSM. Write Boolean equations for the next state and output and sketch a schematic of the FSM.",
+    "figure" : "",
+    "reference" : "Exercise 3.22 from the Textbook."
+  },
+
+  "Question K" : {
+    "text" : "You have been enlisted to design a soda machine dispenser for your department lounge. Sodas are partially subsidized by the student chapter of the IEEE, so they cost only 25 cents. The machine accepts nickels, dimes, and quarters. When enough coins have been inserted, it dispenses the soda and returns any necessary change. Design an FSM controller for the soda machine. The FSM inputs are Nickel, Dime, and Quarter, indicating which coin was inserted. Assume that exactly one coin is inserted on each cycle. The outputs are Dispense, ReturnNickel, ReturnDime, and ReturnTwoDimes. When the FSM reaches 25 cents, it asserts Dispense and the necessary Return outputs required to deliver the appropriate change. Then it should be ready to start accepting coins for another soda.",
+    "figure" : "",
+    "reference" : "Exercise 3.26 from the Textbook."
+  },
+
+  "Question L, Part A" : {
+    "text" : "Your company, Detect-o-rama, would like to design an FSM that takes two inputs, A and B, and generates one output, Z. The output in cycle n, Zn, is either the Boolean AND or OR of the corresponding input An and the previous input An-1, depending on the other input, Bn: Zn = An * An−1 if Bn = 0 and Zn = An + An−1 if Bn = 1. Sketch the waveform for Z given the inputs shown in the figure.",
+    "figure" : "",
+    "reference" : "Exercise 2.29 from the Textbook."
+  },
+
+  "Question L, Part B" : {
+    "text" : "Your company, Detect-o-rama, would like to design an FSM that takes two inputs, A and B, and generates one output, Z. The output in cycle n, Zn, is either the Boolean AND or OR of the corresponding input An and the previous input An-1, depending on the other input, Bn: Zn = An * An−1 if Bn = 0 and Zn = An + An−1 if Bn = 1. Is this FSM a Moore or Mealy machine?",
+    "figure" : "",
+    "reference" : "Exercise 2.29 from the Textbook."
+  },
+
+  "Question L, Part C" : {
+    "text" : "Your company, Detect-o-rama, would like to design an FSM that takes two inputs, A and B, and generates one output, Z. The output in cycle n, Zn, is either the Boolean AND or OR of the corresponding input An and the previous input An-1, depending on the other input, Bn: Zn = An * An−1 if Bn = 0 and Zn = An + An−1 if Bn = 1. Design the FSM. Show your state transition diagram, encoded state transition table, next state and output equations, and schematic.",
+    "figure" : "",
+    "reference" : "Exercise 2.29 from the Textbook."
+  },
+
+  "Question M, Part A" : {
+    "text" : "Ben Bitdiddle has designed the circuit, shown in the figure, to compute a registered four-input XOR function. Each two-input XOR gate has a propagation delay of 100 ps and a contamination delay of 55 ps. Each flip-flop has a setup time of 60 ps, a hold time of 20 ps, a clock-to-Q maximum delay of 70 ps, and a clock-to-Q minimum delay of 50 ps. If there is no clock skew, what is the maximum operating frequency of the circuit?",
+    "figure" : "",
+    "reference" : "Exercise 2.33 from the Textbook."
+  },
+
+  "Question M, Part B" : {
+    "text" : "Ben Bitdiddle has designed the circuit, shown in the figure, to compute a registered four-input XOR function. Each two-input XOR gate has a propagation delay of 100 ps and a contamination delay of 55 ps. Each flip-flop has a setup time of 60 ps, a hold time of 20 ps, a clock-to-Q maximum delay of 70 ps, and a clock-to-Q minimum delay of 50 ps. How much clock skew can the circuit tolerate if it must operate at 2 GHz?",
+    "figure" : "",
+    "reference" : "Exercise 2.33 from the Textbook."
+  },
+
+  "Question M, Part C" : {
+    "text" : "Ben Bitdiddle has designed the circuit, shown in the figure, to compute a registered four-input XOR function. Each two-input XOR gate has a propagation delay of 100 ps and a contamination delay of 55 ps. Each flip-flop has a setup time of 60 ps, a hold time of 20 ps, a clock-to-Q maximum delay of 70 ps, and a clock-to-Q minimum delay of 50 ps. How much clock skew can the circuit tolerate before it might experience a hold time violation?",
+    "figure" : "",
+    "reference" : "Exercise 2.33 from the Textbook."
+  },
+
+  "Question M, Part D" : {
+    "text" : "Ben Bitdiddle has designed the circuit, shown in the figure, to compute a registered four-input XOR function. Each two-input XOR gate has a propagation delay of 100 ps and a contamination delay of 55 ps. Each flip-flop has a setup time of 60 ps, a hold time of 20 ps, a clock-to-Q maximum delay of 70 ps, and a clock-to-Q minimum delay of 50 ps. Alyssa P. Hacker points out that she can redesign the combinational logic between the registers to be faster and tolerate more clock skew. Her improved circuit also uses three two-input XORs, but they are arranged differently. What is her circuit? What is its maximum frequency if there is no clock skew? How much clock skew can the circuit tolerate before it might experience a hold time violation?",
+    "figure" : "",
+    "reference" : "Exercise 2.33 from the Textbook."
+  },
+
+  "Question N, Part A" : {
+    "text" : "You are designing an adder for the blindingly fast 2-bit RePentium Processor. The adder is built from two full adders such that the carry out of the first adder is the carry in to the second adder, as shown in the figure. Your adder has input and output registers and must complete the addition in one clock cycle. Each full adder has the following propagation delays: 20 ps from Cin to Cout or to Sum (S), 25 ps from A or B to Cout, and 30 ps from A or B to S. The adder has a contamination delay of 15 ps from Cin to either output and 22 ps from A or B to either output. Each flip-flop has a setup time of 30 ps, a hold time of 10 ps, a clockto-Q propagation delay of 35 ps, and a clock-to-Q contamination delay of 21 ps. If there is no clock skew, what is the maximum operating frequency of the circuit?",
+    "figure" : "",
+    "reference" : "Exercise 2.34 from the Textbook."
+  },
+
+  "Question N, Part B" : {
+    "text" : "You are designing an adder for the blindingly fast 2-bit RePentium Processor. The adder is built from two full adders such that the carry out of the first adder is the carry in to the second adder, as shown in the figure. Your adder has input and output registers and must complete the addition in one clock cycle. Each full adder has the following propagation delays: 20 ps from Cin to Cout or to Sum (S), 25 ps from A or B to Cout, and 30 ps from A or B to S. The adder has a contamination delay of 15 ps from Cin to either output and 22 ps from A or B to either output. Each flip-flop has a setup time of 30 ps, a hold time of 10 ps, a clockto-Q propagation delay of 35 ps, and a clock-to-Q contamination delay of 21 ps. How much clock skew can the circuit tolerate if it must operate at 8 GHz?",
+    "figure" : "",
+    "reference" : "Exercise 2.34 from the Textbook."
+  },
+
+  "Question N, Part C" : {
+    "text" : "You are designing an adder for the blindingly fast 2-bit RePentium Processor. The adder is built from two full adders such that the carry out of the first adder is the carry in to the second adder, as shown in the figure. Your adder has input and output registers and must complete the addition in one clock cycle. Each full adder has the following propagation delays: 20 ps from Cin to Cout or to Sum (S), 25 ps from A or B to Cout, and 30 ps from A or B to S. The adder has a contamination delay of 15 ps from Cin to either output and 22 ps from A or B to either output. Each flip-flop has a setup time of 30 ps, a hold time of 10 ps, a clockto-Q propagation delay of 35 ps, and a clock-to-Q contamination delay of 21 ps. How much clock skew can the circuit tolerate before it might experience a hold time violation?",
+    "figure" : "",
+    "reference" : "Exercise 2.34 from the Textbook."
+  },
+
+  "Question O" : {
+    "text" : "Draw a state machine that can detect when it has received the serial input sequence 01010.",
+    "figure" : "",
+    "reference" : "Interview question 3.1 from the Textbook."
+  }
+
+} 
