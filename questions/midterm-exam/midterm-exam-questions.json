@@ -36,7 +36,7 @@
   },
 
   "Question E, Part 2" : {
-    "text" : "Select binary encoding for the states of a Moore finite state machine which outputs only the first 3 Fibonacci numbers. Draw the next-state and output tables based on your encoding; note the output is the Fibonacci number, so the output needs to be more than one bit. Also, note there are N bits of state and 1 bit for the start S signal so you will have 2^(N+1) rows in the next state table. But for the output table you will have 2^N rows.",
+    "text" : "Select binary encoding for the states of a Moore finite state machine which outputs only the first 3 Fibonacci numbers. Draw the next-state and output tables based on your encoding; note the output is the Fibonacci number, so the output needs to be more than one bit.",
     "figure" : "",
     "reference" : ""
   },
