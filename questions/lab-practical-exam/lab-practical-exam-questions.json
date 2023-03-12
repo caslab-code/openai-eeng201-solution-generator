@@ -1,0 +1,8 @@
+{
+  "Question A" : {
+    "text" : "Implement Verilog code for a counter that can count up or down or pause, based on button inputs from the users. The counter can also be enabled or disabled. The current value of the counter will be displayed on four 7- segment displays at the same time. One switch will determine if the counter is enabled or disabled. If the counter is disabled by the switch, the counter will be reset to zero. If the counter is enabled by the switch, 3 buttons, pressed individually, will determine if the counter counts up, counts down, or pauses. 7-segnment display code is provided, also code for a clock divider is provided. All you have to do is to write Verilog code to monitor input buttons and a switch, manage the counter.",
+    "figure" : "",
+    "reference" : ""
+  }
+
+} 
